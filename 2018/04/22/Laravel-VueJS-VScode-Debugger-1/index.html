@@ -54,6 +54,8 @@
     
     <title>
         
+            Laravel + VueJS + VScode Debugger 로 개발환경 설정하기 #1 | 
+        
         itsnothingg
     </title>
 
@@ -224,7 +226,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="itsnothingg">
-    <meta name="msapplication-starturl" content="http://itsnothingg.github.io/">
+    <meta name="msapplication-starturl" content="http://itsnothingg.github.io/2018/04/22/Laravel-VueJS-VScode-Debugger-1/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="itsnothingg">
@@ -239,13 +241,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://itsnothingg.github.io/">
+    <meta property="og:url" content="http://itsnothingg.github.io/2018/04/22/Laravel-VueJS-VScode-Debugger-1/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="itsnothingg">
+    <meta property="og:title" content="Laravel + VueJS + VScode Debugger 로 개발환경 설정하기 #1 | itsnothingg">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="">
     
 
+    
+        <meta property="article:published_time" content="Sun Apr 22 2018 23:13:51 GMT+0900">
+        <meta property="article:modified_time" content="Wed May 16 2018 08:40:03 GMT+0900">
     
 
     <!-- The Twitter Card protocol -->
@@ -253,35 +258,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://itsnothingg.github.io" />
+        <link rel="canonical" href="http://itsnothingg.github.io/2018/04/22/Laravel-VueJS-VScode-Debugger-1/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
+
+
 <script type="application/ld+json">
 {
-    "@context": "http://schema.org",
-    "@type": "Website",
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://itsnothingg.github.io/2018/04/22/Laravel-VueJS-VScode-Debugger-1/index.html",
+    "headline": "Laravel + VueJS + VScode Debugger 로 개발환경 설정하기 #1",
+    "datePublished": "Sun Apr 22 2018 23:13:51 GMT+0900",
+    "dateModified": "Wed May 16 2018 08:40:03 GMT+0900",
+    "author": {
+        "@type": "Person",
+        "name": "itsnothingg",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "Itsnothingg의 개발 노트"
+    },
     "publisher": {
         "@type": "Organization",
         "name": "itsnothingg",
-        "logo": "/img/favicon.png"
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
     },
-    "url": "http://itsnothingg.github.io",
-    "image": {
-        "@type": "ImageObject",
-        "url": "/img/favicon.png"
-    },
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "http://itsnothingg.github.io"
-    },
-    "description": ""
+    "keywords": "",
+    "description": "",
 }
 </script>
-
-
 
 
     
@@ -315,551 +328,200 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
+                    <!-- Post TOC -->
+
     
-        <!-- Paradox Header -->
-        <!-- Daily pic -->
-<div class="mdl-card mdl-shadow--2dp daily-pic mdl-cell mdl-cell--8-col index-top-block">
-
-    <!-- Pic & Slogan -->
-    <div class="mdl-card__media mdl-color-text--grey-50" style="background-image:url(/img/daily.jpg)">
-        <p class="index-top-block-slogan"><a href="#">
-        
-            
-                Itsnothingg의 개발 노트
-            
-        
-        </a></p>
-    </div>
-
-    <!-- Avatar & Name -->
-    <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
-        <!-- Author Avatar -->
-        <div id="author-avatar">
-            <img src="/img/avatar.png" width="32px" height="32px" alt="avatar">
-        </div>
-        <div>
-            <strong>itsnothingg</strong>
-        </div>
-    </div>
-</div>
-
-        <!-- Blog info -->
-<div class="mdl-card mdl-shadow--2dp something-else mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop index-top-block">
-
-    <!-- Search -->
-    
-    <!-- Google -->
-    <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable" method="post" action="">
-        <label id="search-label" class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--fab mdl-color--accent mdl-shadow--4dp" for="search">
-            <i class="material-icons mdl-color-text--white" role="presentation">search</i>
-        </label>
-
-        <form autocomplete="off" id="search-form" method="get" action="//google.com/search" accept-charset="UTF-8" class="mdl-textfield__expandable-holder" target="_blank">
-            <input class="mdl-textfield__input search-input" type="search" name="q" id="search" placeholder="">
-            <label id="search-form-label" class="mdl-textfield__label" for="search"></label>
-
-            <input type="hidden" name="sitesearch" value="http://itsnothingg.github.io">
-        </form>
-    </div>
-
-
-
-
-
-
-
-    <!-- LOGO -->
-    <div class="something-else-logo mdl-color--white mdl-color-text--grey-600">
-        <a href="#" target="_blank">
-            <img src="/img/logo.png" alt="logo" />
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
         </a>
     </div>
+    -->
 
-    <!-- Infomation -->
-    <div class="mdl-card__supporting-text meta meta--fill mdl-color-text--grey-600">
-        <!-- Blog Title -->
-        <div>
-            <strong>itsnothingg</strong>
+
+    <!-- Left aligned menu below button -->
+    
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        <!-- Custom Thumbnail -->
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(https://cdn-images-1.medium.com/max/1024/1*tfxbKUNv_0InCRUwU16mZw.png)">
+    
+            <p class="article-headline-p">
+                Laravel + VueJS + VScode Debugger 로 개발환경 설정하기 #1
+            </p>
         </div>
-        <div class="section-spacer"></div>
 
-        <!-- Pages -->
-        <button id="show-pages-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-            <i class="material-icons" role="presentation">view_carousel</i>
-            <span class="visuallyhidden">Pages</span>
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>itsnothingg</strong>
+        <span>Apr 22, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
         </button>
-        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="show-pages-button">
-            
-        </ul>
+    -->
 
-        <!-- Menu -->
-        <button id="menubtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-            <i class="material-icons" role="presentation">more_vert</i>
-            <span class="visuallyhidden">show menu</span>
-        </button>
-        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="menubtn">
-            
-
-            
-
-            
-                <a class="index_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=itsnothingg&url=http://itsnothingg.github.io&pic=http://itsnothingg.github.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
-                    <li class="mdl-menu__item mdl-js-ripple-effect">
-                        Share to Weibo
-                    </li>
-                </a>
-            
-
-            
-                <a class="index_share-link" href="https://twitter.com/intent/tweet?text=itsnothingg&url=http://itsnothingg.github.io&via=itsnothingg" target="_blank">
-                    <li class="mdl-menu__item mdl-js-ripple-effect">
-                        Share to Twitter
-                    </li>
-                </a>
-            
-
-            
-                <a class="index_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://itsnothingg.github.io" target="_blank">
-                    <li class="mdl-menu__item mdl-js-ripple-effect">
-                        Share to Facebook
-                    </li>
-                </a>
-            
-
-            
-                <a class="index_share-link" href="https://plus.google.com/share?url=http://itsnothingg.github.io" target="_blank">
-                    <li class="mdl-menu__item mdl-js-ripple-effect">
-                        Share to Google+
-                    </li>
-                </a>
-            
-
-            
-
-            
-
-            
-        </ul>
-    </div>
-</div>
-
-    
-    <div class="locate-thumbnail-symbol"></div>
-
-    <!-- Pin on top -->
+    <!-- Qrcode -->
     
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
+    <!-- Tags (bookmark) -->
     
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/05/16/WhatIsVuex/">도대체 Vuex가 뭐길래?</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/05/16/WhatIsVuex/" target="_self">Read more</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="itsnothingg's avatar">
-            </div>
-            <div>
-                <strong>itsnothingg</strong>
-                <span>May 16, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
+    <!-- Share -->
     
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="https://cdn-images-1.medium.com/max/700/1*UYZJ3-2Dmxr-0IbJ8NqJEg@2x.png">
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/04/22/Oh-man-Look-at-your-API/">오 이런, 당신이 만든 API 좀 보세요!</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            해당 포스트는 
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/04/22/Oh-man-Look-at-your-API/" target="_self">Read more</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="itsnothingg's avatar">
-            </div>
-            <div>
-                <strong>itsnothingg</strong>
-                <span>Apr 22, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="https://cdn-images-1.medium.com/max/1024/1*tfxbKUNv_0InCRUwU16mZw.png">
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/04/22/Laravel-VueJS-VScode-Debugger-1/">Laravel + VueJS + VScode Debugger 로 개발환경 설정하기 #1</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/04/22/Laravel-VueJS-VScode-Debugger-1/" target="_self">Read more</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="itsnothingg's avatar">
-            </div>
-            <div>
-                <strong>itsnothingg</strong>
-                <span>Apr 22, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/04/22/Data-Clumps/">나쁜 코드 — Data Clumps</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            게시판을 조회하는 간단한 함수를 만든다고 생각해보자.// BoardPage1.jsfu...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/04/22/Data-Clumps/" target="_self">Read more</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="itsnothingg's avatar">
-            </div>
-            <div>
-                <strong>itsnothingg</strong>
-                <span>Apr 22, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/04/22/Firebase-Cloud-Function-ES6/">Firebase Cloud Function + ES6 구성하기</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            주의: 2018–04–15 기준으로 Cloud Function은 아직 Beta 버전이고 us-central 리전에서만 호...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/04/22/Firebase-Cloud-Function-ES6/" target="_self">Read more</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="itsnothingg's avatar">
-            </div>
-            <div>
-                <strong>itsnothingg</strong>
-                <span>Apr 22, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="https://cdn-images-1.medium.com/max/1024/1*JFTA8WXdkQF08JZ_SRSjsw.png">
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/04/22/5min/">5분만 시간을 내보세요</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            5분만 시간을 내보세요최근에 블로그를 둘러보다가 굉장히 
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/04/22/5min/" target="_self">Read more</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="itsnothingg's avatar">
-            </div>
-            <div>
-                <strong>itsnothingg</strong>
-                <span>Apr 22, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/04/22/hello-world/">Hello World</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            Welcome to Hexo
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/04/22/hello-world/" target="_self">Read more</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="itsnothingg's avatar">
-            </div>
-            <div>
-                <strong>itsnothingg</strong>
-                <span>Apr 22, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
     
 
     
 
+    <!-- Share Weibo -->
     
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Laravel + VueJS + VScode Debugger 로 개발환경 설정하기 #1&url=http://itsnothingg.github.io/2018/04/22/Laravel-VueJS-VScode-Debugger-1/index.html&pic=http://itsnothingg.github.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Weibo
+            </li>
+        </a>
+    
 
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Laravel + VueJS + VScode Debugger 로 개발환경 설정하기 #1&url=http://itsnothingg.github.io/2018/04/22/Laravel-VueJS-VScode-Debugger-1/index.html&via=itsnothingg" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Twitter
+            </li>
+        </a>
+    
 
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
-    $('.post_thumbnail-random').addClass('lazy');
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://itsnothingg.github.io/2018/04/22/Laravel-VueJS-VScode-Debugger-1/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Facebook
+            </li>
+        </a>
+    
 
-        locatePost = locatePost.next();
-    }
-</script>
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://itsnothingg.github.io/2018/04/22/Laravel-VueJS-VScode-Debugger-1/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
 
     
 </div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p><figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*tfxbKUNv_0InCRUwU16mZw.png"></figure></p><p>최근에 프로젝트를 진행하면서 vanilla javascript + jquery 조합에서 벗어나여 프론트 엔드 프레임워크를 도입해봤다. 화면에서 비동기로 일어나는 이벤트가 너무 많아 일일이 DOM 렌더링을 관리할 자신이 없어서 도입하게 되었는데, 결과가 꽤 만족스러워서 다음 프로젝트부터는 아예 백엔드로 사용하고 있는 Laravel 과 통합하여 개발환경을 구성하면 어떨까 싶다.</p><p>많고 많은 프론트 엔드 프레임워크 중에서도 내가 택한건 VueJS 이 프레임워크인데, 일단 러닝 커브가 굉장히 적다. 공식 문서만 한번 쭉 훑으면 SPA 까지는 아니더라도, jquery처럼 필요한 부분에만 적용하여 사용하기 시작할 수 있는 수준이다. 소스가 가벼워서 부담이 없고, 나처럼 Laravel 을 사용하는 개발자라면 간단한 코드 몇줄이면 통합 환경이 구성된다는 장점이 있다.</p><ol><li>Laravel 설치</li></ol><p><a href="https://laravel.kr/docs/5.6/installation" target="_blank" rel="noopener">라라벨 한국어 매뉴얼 - 라라벨 코리아 커뮤니티(Laravel Korea Community)</a></p><p>오늘 (2018–04–20) 기준으로 최신 버전은 v.5.6 버전이다. 이미 한글 문서화가 다 되어 있기 때문에 따로 다루지 않겠다.</p><p>2. VSCode 설치</p><p><a href="https://code.visualstudio.com/download" target="_blank" rel="noopener">Download Visual Studio Code - Mac, Linux, Windows</a></p><p>개인적으로는 Atom 인터페이스가 마음에 들어 예전부터 사용해왔는데, VSCode를 사용해보고 난 후로는 다시 사용할 일이 없을 것 같다. 속도, 기능, 플러그인 수 까지 빠지는 것 하나 없는 혜자 IDE이다. 특히나 내장 NodeJS Debugger가 내장되어 있어 풀스택을 개발하는 사람들에게 유용하다.</p><p>3. VSCode 플러그인 설치</p><p>VueJS 파일 형식은 VSCode에서 기본으로 지원하는 파일형식이 아니기 때문에, 이를 위한 플러그인을 추가해주어야한다. 좌측 세로 탭에서 마지막 탭을 클릭한 후(마켓 플레이스), Vue를 검색하여 처음 나오는 플로그인을 설치 후 VSCode를 다시 로드하면 된다.</p><figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*WP1NUgRaPUyuwtqUIagnMA.png"></figure><p>4. 프로젝트 설정</p><p>1번 링크에서 컴포저를 설치 하였다면, 프로젝트가 새로 만들어지기 원하는 폴더로 가서 아래와 같은 명령어를 입력한다.</p><pre>composer create-project –prefer-dist laravel/laravel Boilerplate</pre><p>뒤에 Boilerplate는 프로젝트 이름이니 바꿔주어야 한다. 위 명령어는 실행되는 데 몇 분정도 걸린다. 컴포저는 사용할 때마다 느끼는 거지만 너무 느리고 메모리도 많이 먹는다. npm 대신에 yarn 이 있듯이 composer도 경쟁 패키지 매니저가 나오면 하는 바람이 있다ㅜ</p><p>명령어가 수행되었다면, VSCode를 열어서 해당 폴더를 열어준다. 그러고 resources/assets/js/components 파일을 열어보면 짜잔~ 이미 ExampleComponent라는 vue 파일이 존재하고 있을 것이다. 사실 Laravel 에서는 VueJS 를 이미 내장하여 배포하고 있다. 우리가 해줄 일은 이 파일을 컴파일하고, view쪽에 집에 넣어 사용하기만 하면 된다. 일단 이 ExampleComponent 파일을 삭제하고, 같은 components 폴더 아래 HelloWorld.vue라는 파일을 하나 만든다. 내용은 아래와 같다.</p><iframe src="" width="0" height="0" frameborder="0" scrolling="no"><a href="https://medium.com/media/f14b3ce665d77f9328d00f9fc0741bd8/href" target="_blank" rel="noopener">https://medium.com/media/f14b3ce665d77f9328d00f9fc0741bd8/href</a></iframe><p>새로운 Vue 컴포넌트 파일이 생길때마다 이를 resources/assets/js/app.js 파일에서 등록해줘야 한다. app.js에 있던 example-component를 제거하고 새로운 컴포넌트인 hello-world로 아래처럼 대치해준다.</p><iframe src="" width="0" height="0" frameborder="0" scrolling="no"><a href="https://medium.com/media/e5c18ff9ddf725666a1da105d58de70f/href" target="_blank" rel="noopener">https://medium.com/media/e5c18ff9ddf725666a1da105d58de70f/href</a></iframe><p>이 app.js 파일을 view에서 불러와야한다. resources/views/welcome.blade.php &lt;body&gt; 태그가 끝나는 줄 바로 위에 아래 코드를 추가하여 app.js를 불러온다.</p><iframe src="" width="0" height="0" frameborder="0" scrolling="no"><a href="https://medium.com/media/78030886a86760a21238fef42c0cb623/href" target="_blank" rel="noopener">https://medium.com/media/78030886a86760a21238fef42c0cb623/href</a></iframe><p>우리가 만든 HelloWorld.vue가 실제로 동작하는 지 확인하기 위해 대문짝하게 나오는 Laravel 글자에다가 HelloWorld 컴포넌트를 붙어넣어 보자. welcome.blade.php의 body쪽 소스가 아래와 같이 변해야한다.</p><iframe src="" width="0" height="0" frameborder="0" scrolling="no"><a href="https://medium.com/media/0aa2073f2bde596d9fe368b743e5333b/href" target="_blank" rel="noopener">https://medium.com/media/0aa2073f2bde596d9fe368b743e5333b/href</a></iframe><p>이제 단축키인 Control + ` (윈도우 기준) 을 VSCode에서 누르면 프로젝트 디렉토리로 이동된 터미널이 생성된다. 터미널이 필요할 때마다 유용하게 사용할 수 있는 단축기이니 기억해두자. 이 터미널에 아래 명령어를 입력하여 Laravel 서버를 띄운다.</p><pre>php artisan serve</pre><p>이제 브라우저를 띄어서 localhost:8000으로 가보면</p><figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*whkMAWut1kOJzk5PvIkOGw.png"></figure><p>위와 같이 횡한 화면을 보게 될 것이다. 우리가 아직 새로 만든 HelloWorld 컴포넌트에 대해서 컴파일을 하지 않았기 때문에 렌더링이 되지 않은 것이다. 컴파일을 하기 위해서, Laravel 서버는 그대로 구동시켜놓고 터미널 패널 우측 + 아이콘을 클릭하여 새 터미널을 띄운 후 아래와 같은 명령어를 입력한다.</p><pre>npm install</pre><p>우선 컴파일 전에 javascript 용 필요한 패키지를 설치하는 작업이다. 1~2분 정도 걸린다. 위 작업이 완료되면 아래와 같은 명령어로 실제 컴포넌트 파일 컴파일을 수행할 수 있다.</p><pre>npm run dev</pre><p>작업이 완료되면, 컴파일 된 파일들이 출력된다. 다시 localhost:8000으로 돌아가서 페이지를 리로드 해보자.</p><figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*2b2XNlp4faSFiSXHNYBA6g.png"></figure><p>짜잔~ 성공적으로 컴포넌트가 렌더링 되는 모습을 볼 수 있다. 기본 구성은 되었지만 더 간편화된 개발 환경 구성을 위하여 아직 밟아야 할 단계가 몇가지 더 있다.</p><p>HelloWorld.vue 파일로 돌아가 Hello Laravel + Vue! 문구를 No Thanks! 와 같은 다른 문구로 교체해본후에 localhost:8000을 로드해보면 화면은 여전히 Hello Laravel + Vue! 문구를 표시하고 있을 것이다. Vue파일은 수정될때마다 컴파일 되어야 변경사항이 반영된다. 그러나 우리가 일일이 파일을 수정하고 명령어를 날릴 수는 없는 노릇이기에, 이미 파일 변경을 자동으로 감지하여 컴파일을 다시 하는 명령어가 준비되어 있다.</p><pre>npm run watch</pre><p>위 명령어는 지속적으로 파일을 감시하여 컴파일을 다시 해준다. 명령어가 실행된 상태에서, 문구를 다시 바꾼 후 저장하고 localhost:8000을 리로드해보자. 변경 사항이 바로 반영된 것을 확인할 수 있을 것이다.</p><p>사실 여기까지만 구성해도 개발하는 데 별 무리는 없다. 나도 프로젝트를 이 구성으로 진행하였었다. 다만 현재 구성으로는 에러가 발생했을 시, 모든 에러가 app.js 파일을 가르키므로 오류 추적이 굉장히 어려워진다. VSCode의 디버깅 기능을 사용하여 어떻게 개발을 더 효율적으로 할 수 있는지 다음 포스트에서 더 살펴보겠다.</p>&lt;img src=”<a href="https://medium.com/_/stat?event=post.clientViewed&amp;referrerSource=full_rss&amp;postId=c47e6a177b83&quot;" target="_blank" rel="noopener">https://medium.com/_/stat?event=post.clientViewed&amp;referrerSource=full_rss&amp;postId=c47e6a177b83&quot;</a> width=”1” height=”1”<p></p>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2018/04/22/Oh-man-Look-at-your-API/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Newer
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2018/04/22/Data-Clumps/" id="post_nav-older" class="next-content">
+            Older
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
@@ -1147,12 +809,6 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
 
-
-    <!-- Swiftye -->
-    
-
-    <!-- Local Search-->
-    
 
 
 <!-- UC Browser Compatible -->

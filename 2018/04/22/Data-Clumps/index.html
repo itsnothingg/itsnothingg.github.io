@@ -54,6 +54,8 @@
     
     <title>
         
+            나쁜 코드 — Data Clumps | 
+        
         itsnothingg
     </title>
 
@@ -224,7 +226,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="itsnothingg">
-    <meta name="msapplication-starturl" content="http://itsnothingg.github.io/">
+    <meta name="msapplication-starturl" content="http://itsnothingg.github.io/2018/04/22/Data-Clumps/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="itsnothingg">
@@ -239,13 +241,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://itsnothingg.github.io/">
+    <meta property="og:url" content="http://itsnothingg.github.io/2018/04/22/Data-Clumps/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="itsnothingg">
+    <meta property="og:title" content="나쁜 코드 — Data Clumps | itsnothingg">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="">
     
 
+    
+        <meta property="article:published_time" content="Sun Apr 22 2018 23:12:48 GMT+0900">
+        <meta property="article:modified_time" content="Wed May 16 2018 08:39:37 GMT+0900">
     
 
     <!-- The Twitter Card protocol -->
@@ -253,35 +258,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://itsnothingg.github.io" />
+        <link rel="canonical" href="http://itsnothingg.github.io/2018/04/22/Data-Clumps/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
+
+
 <script type="application/ld+json">
 {
-    "@context": "http://schema.org",
-    "@type": "Website",
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://itsnothingg.github.io/2018/04/22/Data-Clumps/index.html",
+    "headline": "나쁜 코드 — Data Clumps",
+    "datePublished": "Sun Apr 22 2018 23:12:48 GMT+0900",
+    "dateModified": "Wed May 16 2018 08:39:37 GMT+0900",
+    "author": {
+        "@type": "Person",
+        "name": "itsnothingg",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "Itsnothingg의 개발 노트"
+    },
     "publisher": {
         "@type": "Organization",
         "name": "itsnothingg",
-        "logo": "/img/favicon.png"
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
     },
-    "url": "http://itsnothingg.github.io",
-    "image": {
-        "@type": "ImageObject",
-        "url": "/img/favicon.png"
-    },
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "http://itsnothingg.github.io"
-    },
-    "description": ""
+    "keywords": "",
+    "description": "",
 }
 </script>
-
-
 
 
     
@@ -315,551 +328,209 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
+                    <!-- Post TOC -->
+
     
-        <!-- Paradox Header -->
-        <!-- Daily pic -->
-<div class="mdl-card mdl-shadow--2dp daily-pic mdl-cell mdl-cell--8-col index-top-block">
-
-    <!-- Pic & Slogan -->
-    <div class="mdl-card__media mdl-color-text--grey-50" style="background-image:url(/img/daily.jpg)">
-        <p class="index-top-block-slogan"><a href="#">
-        
-            
-                Itsnothingg의 개발 노트
-            
-        
-        </a></p>
-    </div>
-
-    <!-- Avatar & Name -->
-    <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
-        <!-- Author Avatar -->
-        <div id="author-avatar">
-            <img src="/img/avatar.png" width="32px" height="32px" alt="avatar">
-        </div>
-        <div>
-            <strong>itsnothingg</strong>
-        </div>
-    </div>
-</div>
-
-        <!-- Blog info -->
-<div class="mdl-card mdl-shadow--2dp something-else mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop index-top-block">
-
-    <!-- Search -->
-    
-    <!-- Google -->
-    <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable" method="post" action="">
-        <label id="search-label" class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--fab mdl-color--accent mdl-shadow--4dp" for="search">
-            <i class="material-icons mdl-color-text--white" role="presentation">search</i>
-        </label>
-
-        <form autocomplete="off" id="search-form" method="get" action="//google.com/search" accept-charset="UTF-8" class="mdl-textfield__expandable-holder" target="_blank">
-            <input class="mdl-textfield__input search-input" type="search" name="q" id="search" placeholder="">
-            <label id="search-form-label" class="mdl-textfield__label" for="search"></label>
-
-            <input type="hidden" name="sitesearch" value="http://itsnothingg.github.io">
-        </form>
-    </div>
-
-
-
-
-
-
-
-    <!-- LOGO -->
-    <div class="something-else-logo mdl-color--white mdl-color-text--grey-600">
-        <a href="#" target="_blank">
-            <img src="/img/logo.png" alt="logo" />
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
         </a>
     </div>
+    -->
 
-    <!-- Infomation -->
-    <div class="mdl-card__supporting-text meta meta--fill mdl-color-text--grey-600">
-        <!-- Blog Title -->
-        <div>
-            <strong>itsnothingg</strong>
-        </div>
-        <div class="section-spacer"></div>
 
-        <!-- Pages -->
-        <button id="show-pages-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-            <i class="material-icons" role="presentation">view_carousel</i>
-            <span class="visuallyhidden">Pages</span>
-        </button>
-        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="show-pages-button">
-            
-        </ul>
-
-        <!-- Menu -->
-        <button id="menubtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-            <i class="material-icons" role="presentation">more_vert</i>
-            <span class="visuallyhidden">show menu</span>
-        </button>
-        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="menubtn">
-            
-
-            
-
-            
-                <a class="index_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=itsnothingg&url=http://itsnothingg.github.io&pic=http://itsnothingg.github.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
-                    <li class="mdl-menu__item mdl-js-ripple-effect">
-                        Share to Weibo
-                    </li>
-                </a>
-            
-
-            
-                <a class="index_share-link" href="https://twitter.com/intent/tweet?text=itsnothingg&url=http://itsnothingg.github.io&via=itsnothingg" target="_blank">
-                    <li class="mdl-menu__item mdl-js-ripple-effect">
-                        Share to Twitter
-                    </li>
-                </a>
-            
-
-            
-                <a class="index_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://itsnothingg.github.io" target="_blank">
-                    <li class="mdl-menu__item mdl-js-ripple-effect">
-                        Share to Facebook
-                    </li>
-                </a>
-            
-
-            
-                <a class="index_share-link" href="https://plus.google.com/share?url=http://itsnothingg.github.io" target="_blank">
-                    <li class="mdl-menu__item mdl-js-ripple-effect">
-                        Share to Google+
-                    </li>
-                </a>
-            
-
-            
-
-            
-
-            
-        </ul>
-    </div>
-</div>
-
+    <!-- Left aligned menu below button -->
     
-    <div class="locate-thumbnail-symbol"></div>
-
-    <!-- Pin on top -->
     
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/05/16/WhatIsVuex/">도대체 Vuex가 뭐길래?</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/05/16/WhatIsVuex/" target="_self">Read more</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="itsnothingg's avatar">
-            </div>
-            <div>
-                <strong>itsnothingg</strong>
-                <span>May 16, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="https://cdn-images-1.medium.com/max/700/1*UYZJ3-2Dmxr-0IbJ8NqJEg@2x.png">
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/04/22/Oh-man-Look-at-your-API/">오 이런, 당신이 만든 API 좀 보세요!</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            해당 포스트는 
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/04/22/Oh-man-Look-at-your-API/" target="_self">Read more</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="itsnothingg's avatar">
-            </div>
-            <div>
-                <strong>itsnothingg</strong>
-                <span>Apr 22, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="https://cdn-images-1.medium.com/max/1024/1*tfxbKUNv_0InCRUwU16mZw.png">
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/04/22/Laravel-VueJS-VScode-Debugger-1/">Laravel + VueJS + VScode Debugger 로 개발환경 설정하기 #1</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/04/22/Laravel-VueJS-VScode-Debugger-1/" target="_self">Read more</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="itsnothingg's avatar">
-            </div>
-            <div>
-                <strong>itsnothingg</strong>
-                <span>Apr 22, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/04/22/Data-Clumps/">나쁜 코드 — Data Clumps</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            게시판을 조회하는 간단한 함수를 만든다고 생각해보자.// BoardPage1.jsfu...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/04/22/Data-Clumps/" target="_self">Read more</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="itsnothingg's avatar">
-            </div>
-            <div>
-                <strong>itsnothingg</strong>
-                <span>Apr 22, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/04/22/Firebase-Cloud-Function-ES6/">Firebase Cloud Function + ES6 구성하기</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            주의: 2018–04–15 기준으로 Cloud Function은 아직 Beta 버전이고 us-central 리전에서만 호...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/04/22/Firebase-Cloud-Function-ES6/" target="_self">Read more</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="itsnothingg's avatar">
-            </div>
-            <div>
-                <strong>itsnothingg</strong>
-                <span>Apr 22, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="https://cdn-images-1.medium.com/max/1024/1*JFTA8WXdkQF08JZ_SRSjsw.png">
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/04/22/5min/">5분만 시간을 내보세요</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            5분만 시간을 내보세요최근에 블로그를 둘러보다가 굉장히 
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/04/22/5min/" target="_self">Read more</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="itsnothingg's avatar">
-            </div>
-            <div>
-                <strong>itsnothingg</strong>
-                <span>Apr 22, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/04/22/hello-world/">Hello World</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            Welcome to Hexo
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/04/22/hello-world/" target="_self">Read more</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="itsnothingg's avatar">
-            </div>
-            <div>
-                <strong>itsnothingg</strong>
-                <span>Apr 22, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                나쁜 코드 — Data Clumps
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>itsnothingg</strong>
+        <span>Apr 22, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=나쁜 코드 — Data Clumps&url=http://itsnothingg.github.io/2018/04/22/Data-Clumps/index.html&pic=http://itsnothingg.github.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Weibo
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=나쁜 코드 — Data Clumps&url=http://itsnothingg.github.io/2018/04/22/Data-Clumps/index.html&via=itsnothingg" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://itsnothingg.github.io/2018/04/22/Data-Clumps/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://itsnothingg.github.io/2018/04/22/Data-Clumps/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
     
 </div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p></p><p>게시판을 조회하는 간단한 함수를 만든다고 생각해보자.</p><pre>// BoardPage1.js</pre><pre>function search(page, title, startDate, endDate, limit) {</pre><pre> $.get(&quot;/board1&quot;, {<br> page, title, startDate, endDate, limit<br> }).done(<strong>function</strong>( data ) {<br> alert( &quot;Data Loaded: &quot; + data )<br> });</pre><pre>}</pre><p>파라미터로 조회할 페이지, 검색어, 검색 시작 일자, 검색 종료 일자, 검색 갯수를 받고 그에따라 api를 호출하는 단순한 함수이다. 아무 문제 없이 잘 동작하는 코드이다.</p><p>그러다 게시판이 추가되어 BoardPage2에 해당하는 조회 함수를 또 추가해야하는 상황이 생겼다. BoardPage2에는 검색 카테고리가 추가되어야 한다.</p><pre>// BoardPage2.js</pre><pre>function search(page, title, startDate, endDate, limit, category) {</pre><pre> $.get(&quot;/board2&quot;, {<br> page, title, startDate, endDate, limit, category<br> }).done(<strong>function</strong>( data ) {<br> alert( &quot;Data Loaded: &quot; + data )<br> });</pre><pre>}</pre><p>BoardPage1.js 에 있는 함수를 복붙하여 category 파라미터를 추가한 후에 api에 추가로 넘긴다. 깔끔하게 동작한다.</p><p>또 다시 요청이 들어와 BoardPage3에 대한 함수를 만들어야 한다. 다만 BoardPage3의 검색에는 특수문자가 들어갈 수도 있고 검색 시작일자와 끝나는 날자가 유효한 날자 자료형인지 검사해야 한다고 한다. 역시 일단 BoardPage1.js 에 있는 함수를 복붙하여 기본 틀을 만들어 놓고, 필요한 부분을 수정하기로 한다.</p><pre>// BoardPage3.js</pre><pre>function search(page, title, startDate, endDate, limit) {</pre><pre> if (!isDate(startDate)) return<br> if (!isDate(endDate)) return<br> title = escape(title)<br> $.get(&quot;/board3&quot;, {<br> page, title, startDate, endDate, limit, category<br> }).done(<strong>function</strong>( data ) {<br> alert( &quot;Data Loaded: &quot; + data )<br> });</pre><pre>}</pre><p>우리는 복붙의 달인이기 때문에 게시판이 늘어날 때마다 BoardPage1.js 파일을 열어 조회 함수를 복사하여 그대로 가져다 쓰고 필요한 부분만 약간씩 수정하여 사용할 것이다. 중복되는 코드들이 여기 저기 쌓이는 것 같지만, 일단 게시판을 빨리 붙히는 게 중요하니 신경쓰지 않기로 한 채 말이다.</p><p>이런 “복붙” 유형의 코드들은 소스의 부피를 키울 뿐만 아니라, 가독성을 심하게 떨어뜨리고, 수정에 무방비하다. 예를 들어 위 게시판 조회 함수에서, 전 페이지에 공통적으로 검색어 제한, 검색어 길이 제한, 날짜 제한 등과 같은 검증을 진행하는 부분을 추가해야한다고 하면, 현재 구조로는 이 검증을 모든 조회 함수에 집어 넣게 될 것이다. 마찬가지로 이 검증에 수정 사항이 발생했을 때도 다시 모든 함수를 찾아다니며 고쳐야한다. 이렇게 변수의 집합이나 코드들이 계속해서 뭉쳐다니는 것을 <strong>DataClump</strong>라고 부른다.</p><p>코드에서 DataClump를 제거하기 위해서는 반복되는 부분들을 공통화 시킬 필요가 있다. 새 클래스를 작성하여 반복되는 코드를 추출하는 것이 그 중 한가지 방법이다. 예를들어 우리가 작성하였던 3개의 게시판은 아래와 같이 재구성 될 수 있다.</p><pre>// PageParameter.js</pre><pre>class PageParameter {</pre><pre> page = 1<br> title = &#39;&#39;<br> startDate = &#39;&#39;<br> limit = &#39;&#39;<br> endDate = &#39;&#39;</pre><pre> constructor(page, title, startDate, endDate, limit) {<br> this.page = page<br> this.title = escape(title)<br> this.startDate = new Date(startDate)<br> this.endDate = new Date(endDate)<br> this.limit = limit<br> }</pre><pre> valueOf() {<br> return {this.page, this.title, this.stateDate, this.endDate, this.limit}<br> }<br>}<br></pre><pre>// BoardPage1.js</pre><pre>function search(pageParam) {</pre><pre>$.get(&quot;/board1&quot;, pageParam).done(<strong>function</strong>( data ) {<br> alert( &quot;Data Loaded: &quot; + data )<br> });</pre><pre>}<br></pre><pre>// BoardPage2.js</pre><pre>function search(pageParam, category) {</pre><pre>$.get(&quot;/board2&quot;, {<br> …pageParam, category<br> }).done(<strong>function</strong>( data ) {<br> alert( &quot;Data Loaded: &quot; + data )<br> });</pre><pre>}<br></pre><pre>// BoardPage3.js</pre><pre>function search(pageParam) {<br> $.get(&quot;/board3&quot;, pageParam).done(<strong>function</strong>( data ) {<br> alert( &quot;Data Loaded: &quot; + data )<br> });</pre><pre>}</pre><p>PageParameter 클래스를 선언하여 반복되는 변수들을 묶었다. 이렇게 DataClumps를 제거 했을 때의 장점은 코드가 훨씬 조직되어 이해하기 쉬워지고 수정이나 오류가 생겼을 때도 공통화된 클래스만 수정하면 모든 곳에 수정이 반영되어 훨씬 효율적이다.</p><p><a href="https://refactoring.guru/smells/data-clumps" target="_blank" rel="noopener">Data Clumps</a></p><img src="https://medium.com/_/stat?event=post.clientViewed&referrerSource=full_rss&postId=57dacc2f7f5f" width="1" height="1"><p></p>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2018/04/22/Laravel-VueJS-VScode-Debugger-1/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Newer
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2018/04/22/Firebase-Cloud-Function-ES6/" id="post_nav-older" class="next-content">
+            Older
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
@@ -1147,12 +818,6 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
 
-
-    <!-- Swiftye -->
-    
-
-    <!-- Local Search-->
-    
 
 
 <!-- UC Browser Compatible -->
