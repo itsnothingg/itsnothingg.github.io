@@ -20,19 +20,19 @@ $(function() {
     if (m_name.length < 2) info_check = true
     if (g_name.length < 2) info_check = true
 
-    // ÄíÅ° ¾øÀ¸¸é ¼³Á¤¾ÆÀÌÄÜ ³ëÃâ
+    // ï¿½ï¿½Å° ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
     if ($.cookie('setting_click_check') == 'check') {
     	$('.home_settiong_wrapper').css('opacity', 0)
     } else {
     	$('.home_settiong_wrapper').css('opacity', 1)
     }
     
-    // ÇÏ´Ü ¼³Á¤ÇÏ±â ¸Ş´º ÄíÅ° ÀúÀå°ª
+    // ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½Ş´ï¿½ ï¿½ï¿½Å° ï¿½ï¿½ï¿½å°ª
     $('#tail_button_config').on('click', function() {
         $.cookie('setting_click_check', 'check')
     })
     
-    // ¼³Á¤ ¾ÆÀÌÄÜ Å¬¸¯ Æ®¸®°Å
+    // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Å¬ï¿½ï¿½ Æ®ï¿½ï¿½ï¿½ï¿½
     $('.home_settiong_btn').on('click' , function() {
         $('.tail_menu_section_fold').show()
         $('body, html').animate({scrollTop : ($('#tail_button_config').offset().top)}, 600);
@@ -60,24 +60,24 @@ $(function() {
         
     })
 
-    // È¥ÁÖµé ÀÌ¸§µéÁß ±æÀÌ°¡ ´Ù¸¥ ÀÌ¸§ÀÌ ÀÖ´ÂÁö Ã¼Å©
+    // È¥ï¿½Öµï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì°ï¿½ ï¿½Ù¸ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ï¿½ï¿½ Ã¼Å©
     let parents_name_length_diff = 0
     let first_name_length = $('.insa_parent_block > .parent_name:first').text().length
     $('.insa_parent_block > .parent_name:not(:first)').each(function() {
-        // Ã¹¹øÂ° ÀÌ¸§°ú ³ª¸ÓÁö ÀÌ¸§ ±æÀÌ ºñ±³, ´Ù¸¥°æ¿ì¿¡¸¸ Ä«¿îÆ®
+        // Ã¹ï¿½ï¿½Â° ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½, ï¿½Ù¸ï¿½ï¿½ï¿½ì¿¡ï¿½ï¿½ Ä«ï¿½ï¿½Æ®
         if ($(this).text().length !== first_name_length) {
             parents_name_length_diff++
             return false
         }
     })
 
-    // È¥ÁÖÀÌ¸§ÀÇ ±æÀÌ°¡ ¸ğµÎ °°Àº°æ¿ì
+    // È¥ï¿½ï¿½ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì°ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     if (parents_name_length_diff == 0) {
 
-        // È¥ÁÖ ÀÌ¸§ ÀüÃ¼°¡ ÇÑ±ÛÀÎÁö Ã¼Å©
+        // È¥ï¿½ï¿½ ï¿½Ì¸ï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½Ñ±ï¿½ï¿½ï¿½ï¿½ï¿½ Ã¼Å©
         let all_korean = false
         let parent_names = $('.insa_parent_block > .parent_name').text()
-        if (/^[°¡-ÆR]*$/.test(parent_names)) {
+        if (/^[ï¿½ï¿½-ï¿½R]*$/.test(parent_names)) {
             all_korean = true
         }
     
@@ -90,7 +90,7 @@ $(function() {
 
 
     
-    // ¸¶½ºÅ©¿µ¿ª Å¬¸¯½Ã ²ô±â Æ®¸®°Å
+    // ï¿½ï¿½ï¿½ï¿½Å©ï¿½ï¿½ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Æ®ï¿½ï¿½ï¿½ï¿½
     $('#mask').bind('click', function() {
         if (mask_release_allow == true && $(this).css('opacity') > 0.1) {
             if ($('#mcni_wrapper').css('display') != 'none') {
@@ -100,12 +100,12 @@ $(function() {
         }
     })
 
-    // ÀÔ·ÂÆû ÀÚµ¿¿Ï¼º ²ô±â
+    // ï¿½Ô·ï¿½ï¿½ï¿½ ï¿½Úµï¿½ï¿½Ï¼ï¿½ ï¿½ï¿½ï¿½ï¿½
     $('form').each(function() {
         $(this).attr('autocomplete', 'off')
     })
 
-    // ÀÔ·Â»óÀÚ Å©±â ÀÚµ¿Á¶Àı Æ®¸®°Å
+    // ï¿½Ô·Â»ï¿½ï¿½ï¿½ Å©ï¿½ï¿½ ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½ Æ®ï¿½ï¿½ï¿½ï¿½
     $('textarea').bind('keyup', function(e) {
         textarea_resize($(this))
     })
@@ -138,7 +138,7 @@ $(function() {
         var side = $(this).data('type')
         var side_row_count = $('.family_members[data-side='+side+']', this).length
         if (side_row_count == 0) {
-            $('.bank_family_group_block').addClass('bank_family_group_block_'+side) // bank border ¼û±è
+            $('.bank_family_group_block').addClass('bank_family_group_block_'+side) // bank border ï¿½ï¿½ï¿½ï¿½
         } else {
             $('.bank_family_group_block').removeClass('bank_family_group_block_'+side) 
         }
@@ -146,10 +146,10 @@ $(function() {
     })
 
     /* ==========================================
-                   °¶·¯¸® PHOTO LIST A
+                   ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ PHOTO LIST A
     =============================================*/
 
-    // »çÁø ¸®½ºÆ® ´õ º¸±â ±â´É
+    // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
     $('#photo_more_row').on('click', function() {
         $('#photo_more_img').attr('src', './img/loading4.gif')
         setTimeout(function() {
@@ -159,7 +159,7 @@ $(function() {
         }, 450)
     })
 
-    // º¸Á¤¼­ºñ½º
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     $('#prod_banner1_close_checkbox').on('click', function() {
         $(this).attr('src', '/m/img/200903_01_01-checked.png')
         $.cookie('mcard_prod_banner1_off', 1, {
@@ -170,14 +170,14 @@ $(function() {
     })
 
     /* ==========================================
-                °¶·¯¸® PHOTO LIST B 
+                ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ PHOTO LIST B 
     ============================================= */
 
     var photo_view_swiper
     var photo_thmb_swiper
     var photo_pop_swiper
 
-    // »çÁø ½½¶óÀÌµå
+    // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ìµï¿½
     photo_view_swiper = new Swiper('#photo_view_swiper-container', {
         slidesPerView: 1,
         spaceBetween: 0,
@@ -185,7 +185,7 @@ $(function() {
         on: {
             slideChangeTransitionEnd: function() {
                 var page = Math.floor(this.realIndex / 5)
-                photo_thmb_swiper.slideTo(page) // ÀÛÀº ÀÌ¹ÌÁö´Â ³ª´©±â 5
+                photo_thmb_swiper.slideTo(page) // ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¹ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 5
                 if (photo_pop_swiper) {
                     photo_pop_swiper.slideTo(this.realIndex)
                 }
@@ -197,12 +197,12 @@ $(function() {
         },
     })
 
-    // »çÁø ½æ³×ÀÏ ½½¶óÀÌµå
+    // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ìµï¿½
     photo_thmb_swiper = new Swiper("#photo_thmb_swiper-container", {
         slideToClickedSlide: false,
         on: {
             slideChange: function() {
-                // ½æ³×ÀÏ ±×·ì(5°³¹­À½) ÆäÀÌÂ¡ ¿À·ù È¸ÇÇ¿ë. ¿À·ù Ã£¾Æ³»¼­ ¼öÁ¤ ÇÊ¿ä
+                // ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½×·ï¿½(5ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½) ï¿½ï¿½ï¿½ï¿½Â¡ ï¿½ï¿½ï¿½ï¿½ È¸ï¿½Ç¿ï¿½. ï¿½ï¿½ï¿½ï¿½ Ã£ï¿½Æ³ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ê¿ï¿½
                 $('#photo_thmb_swiper-pagination > span').removeClass('swiper-pagination-bullet-active')
                 $('#photo_thmb_swiper-pagination').children().eq(this.activeIndex).addClass('swiper-pagination-bullet-active')
             }
@@ -216,7 +216,7 @@ $(function() {
 
     })
 
-    // »çÁø ÆË¾÷ ½½¶óÀÌµå
+    // ï¿½ï¿½ï¿½ï¿½ ï¿½Ë¾ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ìµï¿½
     function photo_pop_swiper_init() {
         photo_pop_swiper = new Swiper('#photo_pop_swiper-container', {
             slidesPerView: 1,
@@ -225,7 +225,7 @@ $(function() {
             on: {
                 beforeInit: function() {},
                 init: function() {
-                    $('#photo_pic_pop_wrapper').hide() // ÃÊ±âÈ­ ÀÌÈÄ, »çÁø ÆË¾÷ ¿µ¿ª ¼û±è
+                    $('#photo_pic_pop_wrapper').hide() // ï¿½Ê±ï¿½È­ ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ ï¿½Ë¾ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
                 },
                 slideChangeTransitionEnd: function() {
                     var page = Math.floor(this.realIndex)
@@ -240,9 +240,9 @@ $(function() {
     }
 
 
-    // »çÁø »çÀÌÁî + À§Ä¡ Á¶Á¤
-    var photo_pop_img_lr_margin = 30  // »çÁø ÁÂ¿ì ¸¶Áø
-    var photo_pop_img_top_margin = 100  // »çÁø »ó´Ü ¿©¹é (»ç¿ë¾ÈÇÔ)
+    // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ + ï¿½ï¿½Ä¡ ï¿½ï¿½ï¿½ï¿½
+    var photo_pop_img_lr_margin = 30  // ï¿½ï¿½ï¿½ï¿½ ï¿½Â¿ï¿½ ï¿½ï¿½ï¿½ï¿½
+    var photo_pop_img_top_margin = 100  // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ (ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)
 
     var $photos = $('#photo_pic_pop_wrapper')
     var photoCount = $photos.length
@@ -258,7 +258,7 @@ $(function() {
             let img_resized_w = img_w
             let img_resized_h = img_h
 
-            // ¼ø¼­ÁÖÀÇ - ³Êºñ¸¦ ³ªÁß¿¡ °í·ÁÇØ¾ß ÇÔ
+            // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ - ï¿½Êºï¿½ ï¿½ï¿½ï¿½ß¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø¾ï¿½ ï¿½ï¿½
             if (img_h > nh) {
                 img_resized_h = nh  //  - photo_pop_img_top_margin
                 img_resized_w = img_resized_h * ratio
@@ -292,37 +292,37 @@ $(function() {
 
 
 
-    $('.photo_view_slide').on('click', function() { // °¶·¯¸® ÀÌ¹ÌÁö Å¬¸¯ Æ®¸®°Å
+    $('.photo_view_slide').on('click', function() { // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¹ï¿½ï¿½ï¿½ Å¬ï¿½ï¿½ Æ®ï¿½ï¿½ï¿½ï¿½
 
         $('#photo_pic_pop_wrapper').show()
         $('.photo_pop_img').css('opacity', '1')
         $('.pop_close_btn_wrap').css('opacity', '1')
-        $('.pop_bg_layer').fadeIn() // ·¹ÀÌ¾î ¹è°æ º¸ÀÓ
+        $('.pop_bg_layer').fadeIn() // ï¿½ï¿½ï¿½Ì¾ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         $('body, html').addClass('notScroll')
         $('#photo_view_btn_row').fadeIn()
 
-        //³×ºñ°ÔÀÌ¼Ç ¹öÆ°
+        //ï¿½×ºï¿½ï¿½ï¿½Ì¼ï¿½ ï¿½ï¿½Æ°
         setTimeout(function() {
             $('#photo_view_btn_row').hide()
         }, 4000)
 
     })
 
-    // »çÁø Å©°Ôº¸±â ´İ±â
+    // ï¿½ï¿½ï¿½ï¿½ Å©ï¿½Ôºï¿½ï¿½ï¿½ ï¿½İ±ï¿½
     $('.photo_pop_img, .pop_close_btn_wrap, #photo_pic_pop_wrapper').on('click', function() {
         $('#photo_pic_pop_wrapper').hide()
         $('.pop_bg_layer').fadeOut()
         $('body, html').removeClass('notScroll')
     })
 
-    // PHOTO THMB ÀÌ¹ÌÁö Å¬¸¯½Ã
+    // PHOTO THMB ï¿½Ì¹ï¿½ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½
     $('.photo_thmb_thm_img').on('click', function() {
 
-        // PHOTO VIEW IMAGE Ã³¸®
+        // PHOTO VIEW IMAGE Ã³ï¿½ï¿½
         var key = $(this).data('key')
         photo_view_swiper.slideTo(key)
 
-        // Å¬¸¯ÇÑ ½æ³×ÀÏ È°¼ºÃ³¸®
+        // Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ È°ï¿½ï¿½Ã³ï¿½ï¿½
         $('.photo_thmb_thm_img').css('opacity', '1')
         $(this).css('opacity', '0.3')
 
@@ -331,23 +331,23 @@ $(function() {
 
     
     /* ==========================================
-                        ¿À½Ã´Â±æ
+                        ï¿½ï¿½ï¿½Ã´Â±ï¿½
     ============================================= */
 
     if (map_tel == '') {
         $('.tel_ask_btn').hide()
     }
 
-    // Áöµµ, ¾àµµ ÅÇ
+    // ï¿½ï¿½ï¿½ï¿½, ï¿½àµµ ï¿½ï¿½
     $('.mcard_map_type_btn').on('click', function() {
 
-        // ÅÇ ¹öÆ° È°¼º Ã³¸®
+        // ï¿½ï¿½ ï¿½ï¿½Æ° È°ï¿½ï¿½ Ã³ï¿½ï¿½
         $('.mcard_map_type_btn').each(function() {
             $(this).removeClass('mcard_button2_on')
         })
         $(this).addClass('mcard_button2_on')
 
-        // Å¬¸¯ÇÑ Å¸ÀÔÀÇ Áöµµ Ãâ·ÂÃ³¸®
+        // Å¬ï¿½ï¿½ï¿½ï¿½ Å¸ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ã³ï¿½ï¿½
         $('.map_object').hide()
         $('.map_object[data-cat=' + $(this).data('cat') + ']').show()
 
@@ -365,22 +365,22 @@ $(function() {
     })
 
     /* ==========================================
-                        °èÁÂ
+                        ï¿½ï¿½ï¿½ï¿½
     =============================================*/
 
     var family_group_name_prefix = new Array()
-    family_group_name_prefix['a'] = '½Å¶û'
-    family_group_name_prefix['b'] = '½ÅºÎ'
+    family_group_name_prefix['a'] = 'ì‹ ë‘'
+    family_group_name_prefix['b'] = 'ì‹ ë¶€'
 
     var family_group_name_color = new Array()
     family_group_name_color['a'] = '#8aa5d6'
     family_group_name_color['b'] = '#ee8196'
 
-    // º¸±â
+    // ï¿½ï¿½ï¿½ï¿½
     $('.bank_txt_view_btn').on('click', function() {
 
         $('#bank_pop_title').css('color', family_group_name_color[$(this).data('family_group_type')])
-        $('#bank_pop_title').text(family_group_name_prefix[$(this).data('family_group_type')] + 'Ãø °èÁÂ¹øÈ£')
+        $('#bank_pop_title').text(family_group_name_prefix[$(this).data('family_group_type')] + 'ì¸¡ ê³„ì¢Œë²ˆí˜¸')
         $('#bank_pop_txt_unm').text($(this).prev().text())
 
         $('#bank_pop_txt_acc').text($(this).data('bank_name') + ' ' + $(this).attr('data-bank_num'))
@@ -391,18 +391,18 @@ $(function() {
     })
 
 
-    // º¹»ç
+    // ï¿½ï¿½ï¿½ï¿½
     $('#bank_pop_copy_btn').on('click', function() {
         var bank_txt = $('#bank_pop_txt_acc').text().replace(/-/g,'')
 
         if (bank_txt.length > 1) {
             clipboard_copy(bank_txt)
-            alert(bank_txt + ' º¹»çµÇ¾ú½À´Ï´Ù')
+            alert(bank_txt + ' ë³µì‚¬ë˜ì—ˆìŠµë‹ˆë‹¤ ')
         }
     })
 
 
-    // ´İ±â
+    // ï¿½İ±ï¿½
     $('#bank_pop_close_btn').on('click', function() {
         $('#bank_popup').hide()
         mask(0)
@@ -414,7 +414,7 @@ $(function() {
 
 
     /*
-          [¼öÁ¤ÇÏ±â]
+          [ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½]
                         */
 
     $('.msg_edit_button').live('click', function(e) {
@@ -423,9 +423,9 @@ $(function() {
         msg_idx = $(this).parent().data('idx')
         msg_root = $(this).parent().data('idx')
 
-        //¸Ş½ÃÁö ÆíÁıÆû
-        $('#msg_form_title').text('´ñ±Û ¼öÁ¤')
-        if (msg_area == 'guest' && msg_idx == msg_root) $('#msg_form_title').text('ÃàÇÏ ¸Ş½ÃÁö ¼öÁ¤')
+        //ï¿½Ş½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        $('#msg_form_title').text('ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½')
+        if (msg_area == 'guest' && msg_idx == msg_root) $('#msg_form_title').text('ï¿½ï¿½ï¿½ï¿½ ï¿½Ş½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½')
         mask(0.5)
         $('#reply_form').css({
             'display': 'block',
@@ -434,13 +434,13 @@ $(function() {
             //'top': window.innerHeight/5+'px'
         })
 
-        //³»¿ëÀĞ¾î¼­
+        //ï¿½ï¿½ï¿½ï¿½ï¿½Ğ¾î¼­
         var memo = $('.msg_text[data-idx=' + msg_idx + ']').text()
 
-        //¸Ş½ÃÁö ÆíÁıÆû ÅØ½ºÆ®°ª ÀÔ·Â
+        //ï¿½Ş½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ø½ï¿½Æ®ï¿½ï¿½ ï¿½Ô·ï¿½
         $('#reply_form_textarea').val(memo)
 
-        //ÅØ½ºÆ®¹Ú½º Å©±âÁ¶Á¤
+        //ï¿½Ø½ï¿½Æ®ï¿½Ú½ï¿½ Å©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         var tmp = memo.split('\n')
         var row_count = tmp.length
         for (i = 0; i < tmp.length; i++) {
@@ -449,11 +449,11 @@ $(function() {
         $('#reply_form_textarea').attr('alt', row_count)
         textarea_resize($('#reply_form_textarea'))
 
-        //¾Ë¸²Ã¼Å© Àû¿ë
+        //ï¿½Ë¸ï¿½Ã¼Å© ï¿½ï¿½ï¿½ï¿½
         reply_form_notify($(this).data('notify'))
 
 
-        //ÀÛ¼ºÀÚ¸¸ ¼öÁ¤ °¡´É
+        //ï¿½Û¼ï¿½ï¿½Ú¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         if ($(this).parent().data('mail') == $.cookie('mcard_guest_user_mail')) {
             $('#reply_form_textarea').prop('disabled', false)
             $('#reply_mail_notify_row').show()
@@ -472,7 +472,7 @@ $(function() {
 
 
     /*
-          [´ä±Û´Ş±â]
+          [ï¿½ï¿½Û´Ş±ï¿½]
                         */
     $('.msg_reply_button').live('click', function(e) {
 
@@ -485,10 +485,10 @@ $(function() {
 
         $('#msg_textarea').val('').attr('placeholder', '@' + croot_name)
 
-        $('#msg_textarea').focus() //¶÷´ÙÇÔ¼ö »ç¿ë±İÁö
+        $('#msg_textarea').focus() //ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
         if (!iOS) {
-            //¿ø±ÛÀÌ Àß º¸ÀÌ°Ô ÀÚµ¿½ºÅ©·Ñ
+            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½Ì°ï¿½ ï¿½Úµï¿½ï¿½ï¿½Å©ï¿½ï¿½
             $('html, body').animate({
                 scrollTop: $('.msg[data-idx=' + msg_root + ']').offset().top - 45
             }, 0)
@@ -497,7 +497,7 @@ $(function() {
     })
 
 
-    // ** ¼öÁ¤ÆûÀÇ [µî·ÏÇÏ±â] ¹öÆ° Å¬¸¯½Ã
+    // ** ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ [ï¿½ï¿½ï¿½ï¿½Ï±ï¿½] ï¿½ï¿½Æ° Å¬ï¿½ï¿½ï¿½ï¿½
     $('#msg_form_submit_button').live('click', function() {
 
         var user_name = $('input[name=guest_user_name]').val().trim()
@@ -549,16 +549,16 @@ $(function() {
     })
 
 
-    // ** ¼öÁ¤ÆûÀÇ [»èÁ¦] ¹öÆ° Å¬¸¯½Ã
+    // ** ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ [ï¿½ï¿½ï¿½ï¿½] ï¿½ï¿½Æ° Å¬ï¿½ï¿½ï¿½ï¿½
     $('#msg_delete_button').live('click', function() {
 
-        var delete_confirm_text = 'µî·ÏµÈ ¸Ş½ÃÁö°¡ »èÁ¦µË´Ï´Ù.'
+        var delete_confirm_text = 'ï¿½ï¿½Ïµï¿½ ï¿½Ş½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ë´Ï´ï¿½.'
 
-        //´ñ±ÛÀÌ ÀÖ´ÂÁö È®ÀÎ
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ï¿½ï¿½ È®ï¿½ï¿½
         var this_reply_count = $('.msg[data-croot=' + msg_idx + ']').length - 1
-        if (this_reply_count > 0) delete_confirm_text += '\n\n´ñ±ÛÀÌ µî·ÏµÇÀÖ½À´Ï´Ù. »èÁ¦½Ã, ´ñ±Ûµµ ¸ğµÎ Áö¿öÁı´Ï´Ù.'
+        if (this_reply_count > 0) delete_confirm_text += '\n\nï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ïµï¿½ï¿½Ö½ï¿½ï¿½Ï´ï¿½. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½Ûµï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.'
 
-        //»èÁ¦¿©ºÎ È®ÀÎ
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½
         if (!confirm(delete_confirm_text)) {
             return false
         }
@@ -578,7 +578,7 @@ $(function() {
                     $(this).remove()
                     msg_root = 0
                     if (msg_area == 'photo') photo_reply_update(photo_idx)
-                    //ÀüÃ¼ ¸Ş½ÃÁö °¹¼ö ¾÷µ¥ÀÌÅÍ ÇÊ¿ä
+                    //ï¿½ï¿½Ã¼ ï¿½Ş½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê¿ï¿½
                     if ($('input[name=guest_logout]').val() == 1) {
                         $.cookie('mcard_guest_user_name', null)
                         $.cookie('mcard_guest_user_mail', null)
@@ -602,7 +602,7 @@ $(function() {
 
 
 
-    // ¼öÁ¤¸ğµå ÀÔ·Â»óÀÚ
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·Â»ï¿½ï¿½ï¿½
     $('#reply_form_textarea').on('keyup', function() {
         if ($(this).val().trim().length > 0) {
             $('#msg_form_submit_button').css({
@@ -618,7 +618,7 @@ $(function() {
     })
 
 
-    // ÃàÇÏ±Û ´õ º¸±â ¹öÆ°
+    // ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ°
     $('.guest_more_btn').on('click', function(){
         var clicked = Number($(this).data('clicked')) + 1
         clicked++
@@ -638,7 +638,7 @@ $(function() {
 
 
 
-    // ¼­ºêÆäÀÌÁö »ó´Ü
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
     $('#mcard_top_back_button').bind('click', function() {
         history.back()
     })
