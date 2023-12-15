@@ -1,0 +1,445 @@
+/* home 공통 css */
+@import url('//mcard1.bojagicard.com/font/SeoulHangang.css');
+@import url('//mcard1.bojagicard.com/font/SeoulHangangJungL.css');
+@import url('//cdn.jsdelivr.net/font-spoqa-han-sans/2.1.0/css/SpoqaHanSans-kr.css');
+body { 
+    margin: 0;
+    padding: 0;
+}
+ul, li { 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+a, body, ul, li, div, span, table, tbody, tr, th, td, form, input, textarea, select, button {
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+    font-family: 'SeoulHangangJungL'
+}
+
+
+/* ====================================== 전 테마 공통 ========================================== */
+/* 메인 설정 아이콘 */
+.home_settiong_wrapper {
+    height: 35px;
+    width: 60px;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    z-index: 10;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    opacity: 0;
+}
+.home_settiong_btn {
+    height: 51px;
+    background-image: url('img/icon_setting_btn.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 47px 51px;
+    cursor: pointer;
+    font-size: 12px;
+    padding-left: 31px;
+}
+#photo_view_slide_left_button {
+    padding-left: 10px;
+}
+#photo_view_slide_right_button {
+    padding-right: 10px;
+}
+
+.setting_fade.on {
+    opacity: 1;
+    animation: setting_ani 1s ease 2;
+    text-shadow: 1px 1px 18px #ffffff ;
+    color: #ffffff;
+}
+@keyframes setting_ani {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+ }
+
+/* ============= 연락처, 계좌 block border ============= */
+.family_group_block_a {
+	border: 0px solid transparent;
+}
+.family_group_block_b {
+	border: 0px solid transparent;
+}
+.bank_family_group_block_a {
+	border: 0px solid transparent;
+}
+.bank_family_group_block_b {
+	border: 0px solid transparent;
+}
+
+/* =============  초대인사말 ============= */
+
+.insa_text {
+    line-height: 24px;
+    margin-bottom: 30px;
+}   
+#insa_family_tbl {
+    border-spacing: 0 10px;
+}
+.insa_parent_block {
+    padding-right: 5px;
+}
+.insa_parent_block div {
+    line-height: 20px;
+}
+.insa_rel_block, .insa_ord_block {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.insa_ord_block {
+    text-align: center;
+}
+
+
+/* =============  축하연락처  ============= */
+
+
+/* =============  갤러리 A타입 ============= */
+.photo_view_heart_button {
+    width: 21px;
+    height: 21px;
+    background-image: url('img/photo_view-icon_heart.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 21px;
+}
+.photo_view_heart_button.on {
+    width: 21px;
+    height: 21px;
+    background-image: url('img/icon_heart_red.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 21px;
+}
+/* =============  갤러리 B타입 ============= */
+.notScroll {
+    overflow: hidden; 
+    
+}
+.photo_pop_relative {
+    position: relative;
+}
+#photo_pic_pop_wrapper {   
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 21;
+    width: 100%;
+    height: 100%;
+     cursor: pointer;
+}
+.photo_pop_swiper_wrapper .swiper-slide {
+}
+.photo_pop_img_wrapper {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+.photo_pop_img {
+    box-sizing: border-box;
+    opacity: 0.01;
+}
+.pop_bg_layer {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 20;
+    display: none;
+}
+.pop_close_btn_wrap {
+    opacity: 0.01;
+    background-color: #f5f5f7;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+.pop_close_btn {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: rotate(45deg);
+}
+.pop_close_btn:before {
+    content: '';
+    background-color: #9598a0;
+    width: 1px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.pop_close_btn:after {
+    content: '';
+    background-color: #9598a0;
+    width: 30px;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.photo_pop_img_wrapper {
+    width: 100%;
+    text-align: center;
+}
+
+/* ============= 오시는길 ============= */
+
+.map_text_row:not(:last-child) {
+    margin-bottom: 30px;
+}
+.map_img_zoom_btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 33px;
+}
+.map_object {
+    display: none;
+}
+.map_object:first-of-type {
+    display: block;
+}
+.map_view_img {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.map_lock_layer {
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    z-index:2;
+}
+.map_lock_img_wrapper {
+    font-size: 12px; 
+    color: gray;
+    text-align: center;
+    margin-top: 0px;
+    position: relative;
+}
+.map_lock_img {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    opacity: 0.8;
+    height: 35px;
+}
+
+/* =============  사진갤러리 ============= */
+
+
+/* 갤러리 A타입 포토 댓글 */
+.reply {
+    overflow: hidden;
+}
+.reply_photo {
+    background-image: url('img/guest_icon_reply.png');
+    background-repeat: no-repeat;
+    background-size: 9px 11px;
+    background-position: top left 15px;
+    padding-left: 30px;
+    padding-top: 0;
+    padding-bottom: 20px;
+
+}
+.reply_photo div {
+    border: none;
+    background: none;
+    font-family: 'Nanum Barun Gothic';
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+.reply_photo .msg_block_top_photo {
+    display: inline-block;
+}
+.reply_photo .msg_button_block_photo div {
+    background: none;
+}
+.msg_reply_guest {
+    color: #333333;
+}
+.msg_reply_guest .msg_button  {
+    background: none;
+}
+.msg_text_block_photo div {
+    border: none;
+}
+.msg_text_block_photo .heart {
+    display: none;
+}
+.reply_photo .msg_date_photo {
+    font-size: 11px;
+    color: #bbbbbb;
+    line-height: 28px;
+    font-weight: normal;
+}
+.reply_photo .msg_button_photo {
+    background: none;
+    color: #bbbbbb;
+    font-weight: normal;
+    font-size: 11px;
+    margin-left: 15px;
+}
+.reply_photo .msg_block_bottom_photo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.reply_photo .msg_name_photo {
+    font-weight: bold;
+    color: #555555;
+    font-size: 14px;
+    padding-right: 5px;
+    color: #666666;
+    font-size: 13px;
+    display: inline-block;
+    line-height: 20px;
+}
+.msg_memo_photo {
+    line-height: 20px;
+}
+.msg_reply_guest .heart  {
+    display: none;
+}
+.msg_writer_row_photo .msg_date {
+    display: none;
+}
+/* ============== 오시는길 =============== */
+
+/* 내비버튼 클릭시 설치 안내 버튼 */
+.inss {
+    width: 100%;
+    height: 38px;
+    line-height: 38px;
+    background-color: #ffffff;
+    border: 1px solid #e7e7e7;
+    border-radius: 3px;
+    color: #333333;
+    font-family: 'Nanum Barun Gothic';
+    font-size: 12px; 
+    text-align: center;
+}
+.inss a {
+    color: #333333;
+    font-family: 'Nanum Barun Gothic';
+}
+
+/* =============  축하메시지 ============= */
+
+
+/* 하단 네비게이션 공통 스타일 */
+.guest_partition {
+    margin-left: 35px;
+    margin-right: 35px;
+}
+.guest_navigation_wrapper {
+    margin-left: 35px;
+    margin-right: 35px;
+}
+.guest_more_btn {
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; 
+    margin-left: 33px;
+    margin-right: 33px;
+    padding: 10px;
+    text-align: center;
+}
+/* 축하메시지 없을 때 이모티콘 */
+.guest_row_total_wrapper {
+    height: 220px; 
+    text-align: center;
+}
+.guest_row_total_img {
+    margin-top: 70px;
+}
+.guest_row_total_txt {
+    font-size: 13px;
+    color: #999999;
+    margin-top: 15px;
+}
+
+/* =============  섹션별 폰트 사이즈 =============  */
+
+.section_header {
+    font-size: 12px;
+}
+.section_title {
+    font-size: 20px;
+}
+
+/* 초대인사말 */
+.insa_text, #insa_family_tbl td, #insa_family_tbl td span {
+    font-size: 14px;
+}
+/* 축하연락처 */
+.name_block, .name_block > span {
+    font-size: 13px;
+}
+#insa_family_tbl td span, #insa_family_tbl td div {
+    white-space: pre;
+}
+
+/* 달력 */
+.calendar_title li > span {
+    font-size: 20px;
+}
+.calendar_ym {
+    font-size: 18px;
+}
+.calendar th, .calendar .dday > span {
+    font-size: 12px;
+}
+.calendar td > span {
+    font-size: 13px;
+}
+
+/* 갤러리 */
+.photo_row {
+    font-size: 12px;
+}
+.photo_counter_num, .photo_counter_txt {
+    font-size: 14px;
+}
+#photo_more_row span {
+    font-size: 13px;
+    line-height: 45px;
+}
+.photo_view_img_wrapper > img {
+    width: 100%;
+}
+#photo_thmb_wrapper {
+    overflow: hidden;
+}
+#prod_banner1_top > div {
+    font-family: 'Nanum Barun Gothic';
+}    
+.list1_prod_banner1_bottom {
+    margin-bottom: 20px;
+}
+.list2_prod_banner1_bottom {
+    margin-bottom: 0;
+}
+.photo_pop_img {
+    width: 100%;
+}

@@ -1,0 +1,1115 @@
+@import url('//mcard1.bojagicard.com/font/SeoulHangang.css');
+@import url('//mcard1.bojagicard.com/font/SeoulHangangJungL.css');
+@import url('//cdn.jsdelivr.net/font-spoqa-han-sans/2.1.0/css/SpoqaHanSans-kr.css');
+body { 
+    margin: 0; 
+    padding: 0;
+}
+ul, li { 
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+}
+a {
+    text-decoration: none;
+}
+a, body, ul, li, div, span, table, tbody, tr, th, td, form, input, textarea, select, button { 
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+    font-family: 'SeoulHangangJungL'
+}
+/*
+    공통적용 폰트 색상
+                        */
+.section_title > li,
+/* 인사 */
+.insa_text, #insa_family_tbl td, #insa_family_tbl td span,
+/* 축하연락처 */
+.name_block,
+/* 달력 */
+.calendar_ym, .calendar td, .calendar_title li > span, .day > span,
+/* 갤러리 */
+.photo_more_btn, .sub_title, .photo_view_sub_title, #photo_more_row span,
+/* 안내사항 */
+.notice_row_txt_title, .notice_row_txt,
+/* 오시는길 */
+.section_desc, .map_address > div,
+/* 계좌 */
+.bank_txt_view_btn > span,
+/* 축하화환 */
+.flower_wreath_wrapper > div, .aff_banner > div,
+/* 축하메시지*/
+.msg_button, .guest_msg_memo, .msg_name > div, .guest_navigation_wrapper > div 
+/* 소식공유 */
+.share_bottom > div {
+    color: #343d46;
+}
+.section{
+    padding-bottom: 55px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top:25px;
+}
+#photo_section {
+	padding-left: 0;
+	padding-right: 0;
+}
+#photo_section .section_header{
+    margin-left: 35px;
+    margin-right: 35px;
+}
+.section {
+      background-color: transparent;
+}
+.section:nth-child(odd) {
+     background-color: transparent;
+}
+.section_header {    
+    border-bottom: 1px solid #a7adbb;
+    text-align: center;
+}
+.section_header > div {
+    color: #444444;
+    font-size: 12px;
+    padding-bottom: 20px;
+}
+.day_title_wedding_invit, .day_title_date {
+    display:none;
+}
+.section_title {
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 30px;
+    padding-top: 50px;
+    text-align: center;
+}
+.section_title > li {
+    font-size: 20px;
+ }
+.section_title > li:last-child{
+    padding-bottom: 20px;
+    position:relative;
+}
+.section_title > li:last-child:before {
+    color: #727e88;
+    content: '';
+    font-size: 12px;
+    font-style: italic;
+    left: 50%;
+    top: 30px;
+    transform: translateX(-50%);
+    position: absolute;
+}
+.calendar_title > li:last-child:before {
+    content: 'Wedding Day';
+}
+.photo_title > li:last-child:before {
+    content: 'Gallery';
+}
+.map_title  > li:last-child:before {
+    content: 'Navigation';
+}
+.notice_title  > li:last-child:before {
+    content: 'Information';
+}
+.guest_title  > li:last-child:before {
+    content: 'Message';
+}
+/*
+    1. 초대 인사말
+                     */
+.insa_text {
+    text-align: center;
+    line-height: 24px;
+    margin-bottom: 30px;
+}  
+#insa_family_tbl {
+    margin: 0 auto;
+    border-spacing: 0 10px;
+}
+.insa_parent_block {
+    padding-right: 5px;
+    text-align: right;
+    margin-bottom:7px;
+}
+.insa_parent_block div:last-child {
+    margin-bottom: 0;  
+}
+.insa_rel_block, .insa_ord_block {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.insa_self_block span {
+    font-weight: bold;
+}
+/*
+    2. 축하연락처
+                   */
+.contact_inner {
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 33px;
+    margin-left: 38px;
+    margin-right: 38px;
+    padding-top: 60px;
+    position: relative;
+}
+.contact_inner:before {
+    font-size: 14px;
+    position: absolute;
+    top: 18px;
+    transform: translateX(-50%);
+    left: 50%;
+    color: #343d46;
+}
+.contact_inner:after {
+    color: #65737e;
+    font-size: 12px;
+    font-style: italic;
+    position: absolute;    
+    top: 35px;
+    transform: translateX(-50%);
+    left: 50%;
+}
+.contact_inner[data-type="a"]:before {
+    content: '신랑';
+}
+.contact_inner[data-type="a"]:after {
+    content: 'groom';
+}
+
+.contact_inner[data-type="b"]:before {
+    content: '신부';
+}
+.contact_inner[data-type="b"]:after {
+    content: 'bride';
+}
+.contact_inner:last-child {
+    margin-bottom: 0;
+}
+.contact_icon_block {
+    height: 45px;
+    width: 15%;
+	cursor: pointer;
+}
+.contact_row {
+    border-top:1px solid transparent;
+    display: flex;
+}
+.contact_row li {
+    height: 45px;
+    display: inline-block;
+    line-height: 45px;
+}
+.contact_row li:first-child {
+	width: 65%;
+	padding-left: 18px;
+}
+.contact_tel_img {
+    background-image: url('./img/icon_contact_t4c1_tel.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 15px 16px;
+}
+.contact_msg_img {
+    background-image: url('./img/icon_contact_t4c1_msg.png');
+    background-position: center right 10px;
+    background-repeat: no-repeat;
+    background-size: 18px 16px;
+}
+.name_block, .name_block > span {
+    font-size: 13px;
+    color: #343d46;
+}
+
+/* 
+    3. 달력 
+               */
+.calendar_section {
+    background-image: url('./img/img_calendar_t4c1_bg.jpg');
+    background-color: #fdf8f4;
+    background-position: center 70%;
+    background-repeat: no-repeat;
+    background-size: 700px 700px;
+}
+.calendar_title {
+    padding-top: 46px;
+    padding-bottom: 0; 
+}
+.calendar_title li {
+    font-size: 20px;
+}
+.calendar_title_hide {
+    display: none;
+}
+#calendar_row .section_header{
+    border-color: rgba(167,173,187,0.5);
+}
+.calendar_inner {
+    background-color: #ffffff;
+    margin-top:30px;
+    margin-bottom: 20px;
+    padding: 25px;
+    border-radius: 10px;
+}
+.calendar_ym {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 14px;
+    text-align: center;
+}
+table.calendar {
+    height: 100%;
+    width: 100%;
+    border-collapse: collapse;
+    table-layout:fixed;
+
+}
+.calendar th, .calendar td {
+    height: 36px;
+    font-family: 'Spoqa Han Sans';
+    font-weight: 300;
+    text-align: center; 
+    word-break: break-all;
+}
+.calendar th {
+    color: #bd8cbf;
+    font-size: 12px;
+}
+.calendar td > span {
+    font-size: 13px;
+    font-family: 'Spoqa Han Sans';
+    font-weight: 300;
+}
+.calendar .dday > span{
+    display:inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #c08cc2;
+    border-radius: 100%;
+    color: #ffffff;
+    text-align: center;
+    line-height: 25px; 
+    font-size:12px; 
+}
+/* 
+    4. 갤러리 
+                 */
+.photo_block {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.photo_list {
+    font-size: 0;
+}
+.photo_row {
+    height: 140px;
+    width: calc(100% / 2 - 8px);
+    background-color: #f8f8f8;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 140px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    text-align: center;
+}
+.photo_row:nth-child(even){
+    margin-right: 0;
+}
+.photo_row > img{
+    height: 140px;
+    width: 140px;
+}
+/* -- 갤러리 Atype 슬라이드 --*/
+.photo_section_body {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+#photo_counter {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#photo_counter > li {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.photo_counter_num {
+    font-family: arial;
+    font-size: 14px;
+    font-weight: bold;
+}
+.photo_counter_txt {
+    font-size: 14px;
+    margin-top: 4px;
+}
+.photo_section_body {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+/* 더보기 버튼 */
+#photo_more_row {
+    height: 45px;
+    width: 100%;
+    border: 1px solid #a7adbb;
+    text-align: center;
+}
+#photo_more_row span {
+    color: #333333;
+    font-size: 13px;
+    line-height: 45px;
+}
+/* -- 갤러리 Btype 슬라이드 -- */
+/* 선택한 사진 영역 */
+.photo_slide_wrapper {
+
+}
+#photo_view_wrapper {
+    position: relative; 
+    overflow: hidden;
+    margin-left: 35px;
+    margin-right: 35px;
+    background-color: #596671;
+    height: 100%;
+}
+#photo_view_swiper-container {
+    width: 100%;
+    text-align: center;
+}
+#photo_view_swiper-container .swiper-slide img {
+
+}
+#photo_view_swiper-container .swiper-wrapper {
+    width:100%;
+    align-items:center;
+}
+#photo_view_img {
+    max-width: 100%;
+    max-height: 292px;
+}
+#photo_view_btn_row > div {
+    cursor: pointer;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+}
+/* 네비게이션 버튼 */
+#photo_view_prev_btn {
+    height:23px;
+    width:23px;
+    border-top:1px solid #cccccc;;
+    border-left: 1px solid #cccccc;
+    transform: rotate(-45deg);
+    text-indent: -99999px;
+    left: 13px;    
+}
+#photo_view_next_btn {
+    height:23px;
+    width:23px;
+    border-bottom:1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    transform:rotate(-45deg);
+    text-indent: -99999px;
+    right: 13px;
+}
+/* 슬라이드 서브타이틀 */
+.photo_view_sub_title {
+    width: 100%;
+    font-size: 13px;
+    text-align: center;
+    line-height: 18px;
+    margin-top: 15px;
+}
+/* 사진 썸네일 리스트 */
+#photo_thmb_wrapper {
+    text-align: center;
+    margin-top: 30px;
+}
+#photo_thmb_swiper-container {
+    width: 100%;
+}    
+#photo_thmb_swiper-container .swiper-slide {
+    width: 100%;
+}
+.photo_thmb_thm_img {
+    width: 54px;
+    height: 54px;
+    margin-right: 10px;
+    z-index: 1;
+}
+.photo_thmb_thm_img:last-child {
+    margin-right: 0;
+}
+#photo_thmb_swiper-pagination {
+    margin-top: 15px;
+}
+#photo_thmb_swiper-pagination .swiper-pagination-bullet {
+    width: 7px;
+    height: 7px;
+ }
+#photo_thmb_swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #ffd6d7;
+    border:none;
+}
+/* 웨딩 무비 */
+.swiper-container {
+    width: 100%;
+    height: auto;
+}
+#movie_pagination {
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+}
+#movie_pagination .swiper-pagination-bullet {
+    height: 7px;
+    width: 7px;
+}
+#movie_pagination .swiper-pagination-bullet-active {
+    background-color: #c08cc2;
+    border: none;
+}
+.sub_title {
+    font-size: 12px;
+    font-style: italic;    
+    margin-top:47px;
+    margin-bottom: 15px;
+    text-align: center;
+ }
+/* 모바일영상 무료만들기 */
+#photo_movie_banner {
+    background-color: #edf2fc;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+#photo_movie_banner_title {
+    color: #5674b9;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+#photo_movie_banner_button {
+    border: 1px solid #cfd9ec;
+    border-radius: 20px;
+    color: #333333;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    padding: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+}  
+/* 
+    5. 오시는길 
+                 */
+.map_address {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    border: 1px solid #a7adbb;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.map_address > div:first-child {
+    text-decoration: underline;
+}
+/* 전화문의 버튼 */
+.tel_ask_btn {
+    height: 30px;
+    width: 100px;
+    background-color: #c08cc2;
+    background-image: url('./img/icon_contact_white_tel.png');
+    background-position: 12px center;
+    background-repeat: no-repeat;
+    background-size: auto 15px;
+    border-radius: 15px;
+    color: #ffffff;
+    font-size:14px;
+    line-height: 31px;
+    margin: auto;
+    margin-top: 10px;
+    padding-left: 22px;
+}
+/* tab menu button */
+.mcard_button2_row {
+    height: 36px;
+    margin-top: 50px;
+    line-height: 36px;
+}
+.mcard_button2 {
+    width: 50%;
+    background-color: #f5f5f7;
+    color: #7f838c;
+    cursor: pointer;
+    float: left;
+    font-size: 16px;
+    text-align: center;
+}
+.mcard_button2_on {
+    background-color: #edc9e8;
+        color: #534741;
+}
+.map_img {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+#map_img {
+    width: 100%;
+}
+/* navi button */
+.map_navi_button_row {
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+    margin-top: 20px;
+    text-align: center;
+}
+.map_navi_button {
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 18px;
+}
+.map_navi_button > a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #ffffff;
+    border-radius:50%;
+   /* background-color: #fdf8f4; 섹션배경 흰색*/
+    text-align: center;
+    padding-top: 8px;
+    margin-bottom:10px;
+}
+
+.map_navi_button > a img {
+    height: 21px;
+    width: auto;
+}
+.map_navi_button:last-of-type {
+    margin-right: 0;
+}
+.map_view_img {
+    width: 100%;
+}
+#map_text {
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 20px;
+    text-align: center;
+}
+.map_config_icon_wrap {
+    position: absolute;
+    left: 25px;
+    bottom: 30px;
+    cursor: pointer;
+    z-index: 2;
+}
+#map_config_icon_btn {
+    width: 28px;
+    height: 28px;
+}
+/* 
+    6. 안내사항
+                 */
+.notice_row {
+    background-color: #f1e0eb;
+    border-radius: 10px;
+    display:flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+.notice_row_wrapper {
+
+}
+.notice_txt_wrapper {
+    width: 80%;
+}
+.notice_txt_wrapper div {
+    font-size: 12px;
+}
+.notice_txt_wrapper > div:last-child {
+    border: none;
+}
+.notice_row_no {
+    width: 20%;
+    color: #e5d3c5;
+    font-size: 42px;
+    font-style: italic;
+    color: #c08cc2;
+}
+.notice_row_txt_title {
+    padding-bottom: 3px;
+    height:28px;
+    line-height: 28px;
+    position: relative;
+}
+.notice_row_txt {
+    line-height: 20px;
+    word-break: break-all;
+}
+.notice_row_no, .notice_row_txt {
+
+}
+.notice_row_txt_title {
+
+}
+
+.notice_row_txt {
+    font-size: 14px;
+    line-height: 24px;
+    word-break: break-all;
+}
+
+/*
+    7. 축하의마음전하기(계좌)
+                               */
+#bank_popup {
+    width: 75%;
+    background-color: white; 
+    display: none;
+    font-size: 16px; 
+    position: fixed;
+    left: 50%;
+    top: 100px;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+#bank_pop_title {
+    font-size: 18px;
+    margin-top: 30px;
+    text-align: center;
+}
+#bank_pop_notice {
+    margin-top: 20px;
+    text-align: center;
+}
+#bank_pop_txts {
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#bank_pop_btns > div {
+    height: 42px;
+    line-height: 42px;
+}
+.bank_title {
+    padding-bottom: 0;
+ }
+.bank_family_group_block {
+    border: 1px solid #a7adbb;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.bank_family_group_block > li {
+    height: 43px;
+    border-bottom: 1px solid #a7adbb;
+    font-size: 14px;
+    letter-spacing:1px;
+    line-height: 43px;
+    padding-left: 15px;
+}
+.bank_family_group_block > li:last-child {
+    border: none;
+}
+.section_desc {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 22px;
+    margin-bottom: 30px;    
+    text-align: center;
+}
+.bank_txt {
+    cursor: pointer;
+}
+.bank_txt_num {
+    margin-top: 6px;
+}
+.bank_txt_notice {
+    color: #777777;
+    font-size: 11px;
+    text-align: right;
+}
+.bank_txt_view_btn {
+    cursor: pointer;
+    font-size: 15px;
+    border-left: 1px solid #a7adbb;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.bank_txt_view_btn > span {
+    font-size: 15px;
+}
+.family_group_block {
+    margin-bottom: 15px;
+}
+.family_members {
+    height: 42px;
+    border-bottom: 1px solid #a7adbb;
+    display: flex;
+    font-size: 13px; 
+    justify-content: space-between;
+    line-height: 42px;
+    padding-left: 12px;
+}
+
+.family_members:last-child {
+    border: none;
+}
+/*
+    7-1. 화환배송
+                    */
+#flower_wreath_row {
+    padding-bottom: 55px;
+}
+.flower_wreath_wrapper > div {
+    text-align: center;
+    line-height: auto;
+    position: relative;
+    border: 0px solid red;
+}
+.flower_wreath_wrapper > div:first-child {
+    height: 50px;
+}
+.flower_wreath_wrapper > div:nth-child(2) {
+    font-size: 13px;
+    line-height: 22px;
+    margin-top: 8px;
+}
+.flower_wreath_wrapper > a > div {  /* 화환신청버튼 */
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; 
+    cursor: pointer;
+    font-size: 13px;
+    border: 1px solid #ffd4cf;
+    border-radius: 18px;
+    height: 38px;
+    line-height: 36px;
+    width: 150px;
+    margin: auto;
+    margin-top: 8px;
+    text-align: center;
+}
+#flower_wreath_btn_off {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+}
+
+/*
+    8. 축하 메시지
+                      */
+#guest_section {
+    padding-left: 0;
+    padding-right: 0;
+}
+#guest_section .section_header, .guest_title {
+    margin-left: 35px;
+    margin-right: 35px;
+}
+.guest_title {
+    padding-bottom: 0;
+    margin-bottom: 30px;
+}
+.guest-swiper-container .swiper-slide {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.article_row {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.msg_border_wrapper {
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+.msg_border_wrapperr > div {
+    text-align: left;
+}
+.msg_text_block {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 15px;
+    padding-top: 15px; 
+}
+.msg_writer_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.msg_text_block .heart:before {
+    left:0;
+}
+.reply_guest .heart:before {
+    background-color:#ffffff;
+}
+.reply_guest .heart:after {
+    background-color:#ffffff;
+}
+.msg_name {
+    display: flex;
+    align-items: baseline;
+    font-size: 15px;
+}
+.msg_name > div {
+
+}
+.msg_date {
+    font-size: 13px;
+    margin-left: 15px;
+    text-align: right;
+    color: #888888;
+}
+.msg_button_block_guest > div {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+
+}
+.msg_button {
+    height: 30px;
+    width: 64px;
+    border-radius: 0px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 28px;
+    outline: none; 
+    text-align: center;
+    background-color: #f8eff5;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+.msg_button:last-child {
+    border-right:none;
+}
+.reply_guest {
+    background-color: #ffffff;
+    border-top: 1px solid #a7adbb;
+    border-radius: 0 0 8px 8px;
+    text-align: center;
+}
+.reply_guest .heart {
+    display:none;
+ }
+.reply_guest .msg_writer_row {
+    padding-left:12px;
+    padding-right:12px;
+}
+.reply_guest .msg_button {
+    background-color: #faf6fa;
+}
+/* 답글 내용*/
+
+.msg_block_bottom {
+    margin-top: 3px;
+}
+.msg_memo {
+    display: inline-block;
+    font-size: 13px;
+    hyphens: auto;
+    line-height: 18px;
+    margin-left: 5px;
+    padding-top: 8px;
+    word-break: break-all;
+}
+.msg_memo_guest {
+    clear: both;
+    font-size: 15px;
+    line-height: 24px;
+    margin-top: 12px;
+    text-align: center;
+    word-break: break-all;
+    padding-bottom: 10px;
+}
+.guest_article {
+    position: relative;
+}
+.msg_icon_wrapper {
+    height: 45px;
+    width: 45px;
+    background-image: url('./img/guest_emo_bg.png');
+    background-size: 45px 45px;
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+    position: relative;
+}
+.msg_icon_img {
+    height: 23px;
+    width: 24px;
+    left: 11px;
+    position: absolute;
+    top: 11px;
+}
+.guest_article_icon > div {
+    height:30px;
+    background-image: url('./img/icon_guest_article_t1c1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 24px 16px;
+    margin-top: 28px;
+}
+/* 축하메시지 하단 구분선*/
+.guest_partition {
+    border-bottom: 1px solid #ded0c5;
+    margin-top: 48px;
+    margin-bottom:20px;
+}
+.guest_navigation_wrapper {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.guest_navigation_wrapper > div {
+    color: #544741;
+}
+.guest_row_total_wrapper {
+    height: 220px; 
+    text-align: center;
+}
+.guest_row_total_img {
+    margin-top: 70px;
+}
+.guest_row_total_txt {
+    font-size: 13px;
+    color: #999999;
+    margin-top: 15px;
+}
+.guest_prev_btn, .guest_next_btn {    
+    width: 10px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: 10px 20px;
+    cursor:pointer;
+}
+.guest_prev_btn {
+    background-image: url('img/btn_prev_arrow.png');
+}
+.guest_next_btn {
+    background-image: url('img/btn_next_arrow.png');
+}
+.guest_paging_count > span {
+    display: inline-block;
+    font-size: 14px;
+    padding-right: 5px;
+}
+.guest_paging_count > span:last-child {
+    padding-right: 0;
+}
+/* 더보기 버튼 */
+.guest_more_btn {
+    margin-top: 40px;
+}
+/* 
+    9. sns 소식공유 
+                      */
+.share_title > li:first-child {
+    height: 66px;
+    background-image: url('img/img_sns_t4c1_thank_png.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 132px 66px;
+}
+.share_title > li:last-child {
+    display: none;
+}
+.share_sns_row {
+    height: 36px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.share_sns_btn {
+    height: 35px;
+    width: 35px;    
+    font-size: 12px;
+    background-image: url('img/icon_sns_t4c1_kakao.png');
+    background-repeat: no-repeat;
+    background-size: 35px;
+    cursor: pointer;
+    margin-right: 33px;
+}
+.share_sns_btn:last-child{
+    margin-right: 0;
+}
+.share_kakaostory_btn {
+    background-image: url('img/icon_sns_t4c1_story.png');
+}
+.share_line_btn {
+    background-image: url('img/icon_sns_t4c1_line.png');
+}
+.share_facebook_btn {
+    background-image: url('img/icon_sns_t4c1_facebook.png');
+}
+.share_bottom {
+    width: 100%;
+    font-size: 13px;
+    font-style: italic;
+    margin-top: 30px;
+    text-align: center;
+}
+.share_bottom .heart {
+    margin-top: 9px;
+}
+.share_bottom .heart:before {
+    background-color:#524741;
+    left:0;
+}
+.share_bottom .heart:after {
+    background-color:#524741;
+}
+.share_bottom > div:first-child:before {
+    content: 'SNS';
+}
+.share_bottom .heart {
+    margin-top: 9px;
+}
+.share_bottom .heart:before {
+    background-color:#524741;
+    left:0;
+}
+.share_bottom .heart:after {
+    background-color:#524741;
+}
+/* 
+    숨김 처리 
+                */
+
+.day_title_date, {
+	display: none;
+}
+
+/*
+    하트 아이콘
+                */
+.heart {
+    height: 15px;
+    width: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 23px;
+    position: relative;
+}
+.heart:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -50%;
+    width: 8px;
+    height: 13px;
+    border-radius: 50px 50px 0 0;   
+    background-color: #c08cc2;
+    transform: rotate(-48deg);    
+}
+.heart:after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    width: 8px;
+    height: 13px;
+    border-radius: 50px 50px 0 0;
+    background-color: #c08cc2;
+    transform: rotate(48deg);    
+}

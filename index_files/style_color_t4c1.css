@@ -1,0 +1,318 @@
+/* �׸� 4-1 ���� �׶� */
+/*
+    �������� ��Ʈ ����
+                        */
+.section_title > li,
+/* �λ� */
+.insa_text, #insa_family_tbl td, #insa_family_tbl td span,
+/* ���Ͽ���ó */
+.name_block,
+/* �޷� */
+.calendar_ym, .calendar td, .calendar_title li > span, .day > span,
+/* ������ */
+.photo_more_btn, .sub_title, #photo_more_row span,
+/* �ȳ����� */
+.notice_row_txt_title, .notice_row_txt,
+/* ���ô±� */
+.section_desc, .map_address > div, .map_navi_button, .map_address a,
+/* ���� */
+.bank_txt_view_btn > span,
+/* ����ȭȯ */
+.flower_wreath_wrapper > div, .aff_banner > div,
+/* ���ϸ޽���*/
+.msg_button, .msg_memo_guest, .msg_name > div, .guest_navigation_wrapper > div 
+/* �ҽİ��� */
+.share_bottom > div {
+    color: #343d46;
+}
+.section {
+      background-color: #f7ebf3;
+}
+.section:nth-child(odd) {
+     background-color: #faf6f9;
+}
+.section_header {    
+    border-bottom: 1px solid #a7adbb;
+}
+.section_header > div {
+    color: #444444;
+}
+/* section sub title*/
+.section_title > li:last-child:before {
+    color: #727e88;
+}
+/*
+.insa_title > li:last-child:before {
+    content: 'wedding invitation';
+}
+.calendar_title > li:last-child:before {
+    content: 'Wedding Day';
+}
+.photo_title > li:last-child:before {
+    content: 'Gallery';
+}
+.map_title  > li:last-child:before {
+    content: 'Navigation';
+}
+.notice_title  > li:last-child:before {
+    content: 'Infomation';
+}
+.guest_title  > li:last-child:before {
+    content: 'Message';
+}
+*/
+/*
+    1. �ʴ� �λ縻
+                     */
+/*
+    2. ���Ͽ���ó
+                   */
+.contact_inner {
+    background-color: #ffffff;
+}
+.contact_inner:before {
+    color: #343d46;
+}
+.contact_inner:after {
+    color: #65737e;
+}
+.contact_inner[data-type="a"]:before {
+    content: '신랑';
+}
+.contact_inner[data-type="a"]:after {
+    content: 'groom';
+}
+
+.contact_inner[data-type="b"]:before {
+    content: '신부';
+}
+.contact_inner[data-type="b"]:after {
+    content: 'bride';
+}
+.contact_row {
+    border-top:1px solid rgba(167,173,181,0.5);
+}
+.contact_tel_img {
+    background-image: url('./img/icon_contact_t4c1_tel.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 15px 16px;
+}
+.contact_msg_img {
+    background-image: url('./img/icon_contact_t4c1_msg.png');
+    background-position: 80% center;
+    background-repeat: no-repeat;
+    background-size: 16px 15px;
+}
+.name_block, .name_block > span {
+    color: #343d46;
+}
+
+/* 
+    3. �޷� 
+               */
+.calendar_section {
+    background-image: url('./img/img_calendar_t4c1_bg.jpg');
+    background-color: #fdf8f4;
+    background-position: center 70%;
+    background-repeat: no-repeat;
+    background-size: 700px 700px;
+}
+#calendar_row .section_header{
+    border-color: rgba(167,173,187,0.5);
+}
+.calendar_inner {
+    background-color: #ffffff;
+}
+.calendar th {
+    color: #bd8cbf;
+}
+.calendar .dday > span{
+    background-color: #c08cc2;
+    color: #ffffff;
+}
+/* 
+    4. ������ 
+                 */
+.photo_row {
+    background-color: #f8f8f8;
+}
+.photo_more_btn {
+    height: 45px;
+    width: 100%;
+    border: 1px solid #a7adbb;
+}
+#movie_pagination .swiper-pagination-bullet-active {
+    background-color: #c08cc2;
+}
+ /* ������ Atype */
+#photo_more_row {
+    border: 1px solid #a7adbb;
+}
+.photo_counter_txt {
+    color: #777777;
+}
+/* BŸ�� ������ */
+ #photo_view_wrapper {
+    background-color: #ffffff;
+}
+/* 
+    5. ���ô±� 
+                 */
+.map_address {
+    border: 1px solid #a7adbb;
+}
+.map_address > div:first-child {
+    text-decoration: underline;
+}
+/* ��ȭ���� ��ư */
+.tel_ask_btn {
+    background-color: #c08cc2;
+    background-image: url('./img/icon_contact_white_tel.png');
+    background-position: 12px center;
+    background-repeat: no-repeat;
+    background-size: auto 15px;
+    color: #ffffff;
+}
+/* tab menu button */
+.mcard_button2 {
+    background-color: #f5f5f7;
+    color: #7f838c;
+}
+.mcard_button2_on {
+    background-color: #edc9e8;
+    color: #534741;
+}
+/* navi button */
+.map_navi_button > a {
+    background-color: #ffffff;
+}
+/* 
+    6. �ȳ�����
+                 */
+.notice_text {
+    background-color: #edf2fc;
+}
+.notice_row {
+    background-color: #f1e0eb;
+}
+.notice_row_no {
+    color: #c08cc2;
+}
+/*
+    7. �����Ǹ������ϱ�(����)
+                               */
+.bank_family_group_block {
+    border: 1px solid #a7adbb;
+}
+.bank_family_group_block > li {
+    border-bottom: 1px solid #a7adbb;
+}
+.bank_txt_notice {
+    color: #777777;
+}
+.bank_txt_view_btn {
+    border-left: 1px solid #a7adbb;
+}
+.family_members {
+    border-bottom: 1px solid #a7adbb;
+}
+/*
+    7-1. ȭȯ���
+                    */
+.flower_wreath_wrapper > a > div {  /* ȭȯ��û��ư */
+    border: 1px solid #ffd4cf;
+}
+/*
+    8. ���� �޽���
+                      */
+.msg_border_wrapper {
+    background-color: #ffffff;
+}
+.msg_date {
+    color: #888888;
+}
+.msg_button {
+    background-color: #f8eff5;
+}
+.reply_guest {
+    background-color: #ffffff;
+    border-top: 1px solid #a7adbb;
+}
+.reply_guest .msg_button {
+    background-color: #faf6fa;
+}
+/* ��� ����*/
+.msg_icon_wrapper {
+    background-image: url('./img/guest_emo_bg.png');
+    background-size: 45px 45px;
+}
+.guest_article_icon > div {
+    background-image: url('./img/icon_guest_article_t1c1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 24px 16px;
+}
+/* ������ ��ư */
+.guest_more_btn {
+    background-color: #c08cc2;
+    border: 1px solid transparent; 
+    color: #ffffff;
+}
+/* 
+    9. sns �ҽİ��� 
+                      */
+.share_title > li:first-child {
+    background-image: url('img/img_sns_t4c1_thank_png.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 132px 66px;
+}
+.share_sns_btn {
+    background-image: url('img/icon_sns_t4c1_kakao.png');
+    background-repeat: no-repeat;
+    background-size: 35px;
+}
+.share_kakaostory_btn {
+    background-image: url('img/icon_sns_t4c1_story.png');
+}
+.share_line_btn {
+    background-image: url('img/icon_sns_t4c1_line.png');
+}
+.share_facebook_btn {
+    background-image: url('img/icon_sns_t4c1_facebook.png');
+}
+.share_bottom .heart:before {
+    background-color:#524741;
+}
+.share_bottom .heart:after {
+    background-color:#524741;
+}
+.share_bottom > div:first-child:before {
+    content: 'SNS';
+}
+.share_bottom .heart:before {
+    background-color:#524741;
+}
+.share_bottom .heart:after {
+    background-color:#524741;
+}
+
+/* 
+    ���� ó�� 
+                */
+
+.day_title_date, {
+	display: none;
+}
+
+/*
+    ��Ʈ ������
+                */
+.heart:before{
+    background-color: #c08cc2;
+ 
+}
+.heart:after {
+    background-color: #c08cc2;    
+}

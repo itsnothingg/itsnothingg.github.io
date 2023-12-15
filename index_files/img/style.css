@@ -1,0 +1,570 @@
+* {
+    outline: none;
+}
+
+[class$=button] { cursor: pointer; }
+
+.textarea_single_row {
+    height: 40px;
+}
+
+/*
+        COMMON
+                     */
+                     
+body { 
+    margin: 0; 
+    padding: 0;
+}
+ul, li { 
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+}
+a {
+    text-decoration: none;
+}
+a, body, ul, li, div, span, table, tbody, tr, th, td, form, input, textarea, select, button { 
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+    /*font-family: 'SeoulHangangJungL'*/
+}
+
+.mcard_button {
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+    border: 1px solid #666666;
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 400;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.mcard_button_confirm {
+    width: 100%;
+    border: 1px solid #3a74e0;
+    background-color: #fafafa;
+    color: #3a74e0;
+}
+/* 하단 작은 로고 */
+.login_bottom_logo_wrapper {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.login_bottom_logo {
+    height: 20px;
+}
+.mcard_button_02 {
+    border-radius: 0;
+    padding-left: 18px; padding-right: 18px;
+}
+.mcard_back_button {
+    height: 19px;
+    margin-right: 10px;
+    vertical-align: middle;
+    width: auto;
+}
+.mcard_block_title {
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+    color: #333333;
+    font-size: 16px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.login_help_find_title {
+    height: 40px;
+    line-height: 0px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.mcard_block_notice {
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+    background-color: #edf2fc;
+    color: #5674b9;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    height: 72px;
+    line-height: 72px;
+}
+.mcard_block_partition {
+    background-image: url('/m/img/mcard_block_partition_bg.png');
+    background-size: 1px auto;
+    background-repeat: repeat-x;
+    clear: both;
+    height: 15px;
+}
+
+
+
+
+
+
+
+/*
+    레이아웃 공통
+                    */
+input[type='text'], input[type='tel'], input[type='password'], select, input[type="number"] {
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+    background-color: #f8f8f8;
+    border: 1px solid #dddddd;
+    height: 38px;
+}
+
+.layout_text_input, .layout_check_row {
+    padding: 15px;
+}
+.layout_text_input > ul, .layout_check_row > ul  {
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+    border-top: 1px solid #dddddd;
+    font-size: 13px;
+    height: 50px;
+    line-height: 50px;
+    list-style: none;
+    width: 100%;
+}
+.layout_text_input > ul:last-child, .layout_check_row > ul:last-child {
+    border-bottom: 1px solid #dddddd;
+}
+
+/*아이디비번찾기 레이아웃 */
+.layout_login_help_find {
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.layout_login_help_find > ul {
+    border: none;
+}
+.layout_login_help_find > ul:last-child {
+    border: none; 
+}
+.layout_login_help_find > ul > li input {
+    border-radius: 3px;
+}
+.layout_login_help_find > ul > li:first-child {
+    width: 20%;
+} 
+.layout_login_help_find > ul > li:last-child {
+    width: 80%;
+}
+.mcard_button_confirm_wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+}
+/*
+    가입, 신청등 폼 레이아웃
+                                */
+.layout_text_input > ul > li, .layout_check_row > ul > li {
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+    float: left;
+    position: relative;
+}
+.layout_text_input > ul > li:first-child {
+    width: 25%;
+} 
+.layout_text_input > ul > li:last-child {
+    width: 75%;
+}
+
+
+/*
+     체크박스가 들어있는 형태
+                                */
+.layout_check_row > ul > li:first-child {
+    width: 80%;
+    background-color: red;
+} 
+.layout_check_row > ul > li:last-child {
+    float: right;
+    text-align: right;
+    width: 20%;
+    vertical-align: center;
+}
+.layout_check_row_checkbox_img {
+    height: 20px;
+    position: absolute;
+    right: 0;
+    top: 16px;
+    width: 20px;
+}
+
+
+
+/* 회원가입  */
+
+#act_hand_button_row {
+    border-top: 0; line-height: 40px;
+}
+
+#act_hand_code_btn {
+    float: left;
+    margin-left: 11px;
+}
+#act_hand_code_row {
+    display: none;
+}
+
+#insecond_txt, #countdown {
+    font-size:12px!important;
+}
+
+#act_hand_code_row {
+    height: auto; 
+    min-height: 100px;
+    background-color: #f4f4f6;
+}
+input[name=act_hand_code] {
+    float: left;
+}
+
+
+
+/*
+이용약관
+*/
+#term_row {
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+    background-color: #f4f4f6;
+    color: #333333;
+    font-size: 13px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 10px;
+    padding-left: 15px;
+    position: relative;
+}
+#agree1_txt_arrow {
+    height: 12px;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    width: auto;
+}
+#agree1_txt {
+    font-size: 11px;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+/*
+        TOP-ROW
+                    */
+#mcard_top_row {
+    background-color: #ffffff;
+    height: 50px;
+}
+#mcard_top_back_button_wrapper {
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 18px;
+    padding-right: 18px; 
+}
+#mcard_top_back_button {
+    cursor: pointer;
+    height: 19px;
+    vertical-align: middle;
+}
+.mcard_top_img {
+    float: left;
+    height: 50px;
+
+}
+.mcard_top_logo {
+    height: 24px;
+    width: 128px;
+    padding-top: 13px;
+}
+.mcard_top_img:last-of-type {
+    float: right;
+}
+
+
+
+
+
+/*
+        PHOTO LIST
+                         */
+
+#photo_list_wrapper {
+    overflow: hidden; display: inline-block; margin: auto; padding-left: 2px;
+}
+
+.photo_wrapper {
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+    float: left; display: inline; position: relative; line-height: 0px; padding-right: 2px; margin-bottom: 2px;
+}
+.photo_image { cursor: pointer; min-width: 92px; min-height: 92px; }
+
+#photo_more_row {
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+    border: 1px solid #e7e7e7;
+    border-left: 0;
+    border-right: 0;
+    cursor: pointer;
+    height: 43px;
+    margin-top: 20px;
+    text-align: center;
+}
+#photo_more_img {
+    height: 20px;
+    width: auto;
+}
+#photo_list_br_upload_row {
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+    border: 1px solid #e7e7e7;
+    border-left: 0;
+    border-right: 0;
+    cursor: pointer;
+    height: 43px;
+    margin-top: 20px;
+    padding-top: 9px;
+    text-align: center;
+}
+#photo_list_br_upload_button {
+    height: 20px;
+    width: auto;
+}
+
+.photo_video_play_button {
+    height: 28px;
+    width: auto;
+}
+
+/* 사진 전문보정 서비스 */
+#prod_banner1_top {
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+    background-color: #fcf0ed;
+    color: #333333;
+    font-family: 'Nanum Barun Gothic';
+    font-size: 12px;
+    height: 153px;
+    width: calc( 100% - 4px );
+    margin-left: 2px;
+    margin-top: 20px;
+    padding: 20px;
+    letter-spacing: 0.5px;
+    border-radius: 5px 5px 0 0;
+}
+#prod_banner1_top > div {
+    text-align: center;
+}
+.prod_banner1 {
+    margin-right: 33px;
+    margin-left: 33px;
+}
+#prod_banner1_view_btn {
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+    width: 240px;
+    height: 32px;
+    background-color: #f5e3df;
+    border: 1px solid #fefefe;
+    color: #333333;
+    border-radius: 16px;
+    cursor: pointer;
+    font-family: 'Nanum Barun Gothic';
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 32px;
+    margin: auto;
+    margin-top: 5px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.prod_banner1_txt {
+    font-size: 12px; 
+    margin-top: 10px; 
+    line-height: 18px;
+}
+#prod_banner1_bottom {
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+    height: 30px;
+    width: calc( 100% - 4px );
+    background-color: #f5e3df;
+    border-radius: 0 0 5px 5px;
+    font-size: 0;
+    margin-left: 2px;
+    padding-top: 8px;
+    padding-left: 12px;
+    position: relative;
+}
+#prod_banner1_close_checkbox {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin-bottom: -4px;
+}
+#prod_banner1_bottom_txt {
+    color: #666666;
+    display: inline-block;
+    font-family: 'Nanum Barun Gothic';
+    font-size: 13px;
+    height: 15px;
+    line-height: 15px;
+    padding-left: 10px;
+}
+
+
+.form_layer {
+    display: none;
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+    border: 1px solid #ececec;
+    border-left: 0;
+    border-right: 0;
+    position: fixed; z-index: 11; top: 50px; background-color: #ffffff;
+}
+
+.form_title {
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+    background-image: url('./img/photo_view_reply_box_icon.png');
+    background-size: 45px 45px;
+    background-repeat: no-repeat;
+    padding-left: 60px;
+    height: 45px;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: #666666;
+}
+
+.form_close_button {
+    cursor: pointer;
+    height: 17px;
+    position: absolute; right: 15px; top: 17px;
+}
+
+.insbox { line-height: 0; font-size: 0; padding-top: 20px; padding-bottom: 10px; }
+.inss { line-height: 0; font-size: 0; display: none; text-align: center; }
+
+
+
+
+
+
+/*
+     오시는길
+                */
+#map_memo {
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+    border: 1px solid #ececec;
+    color: #333333;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+#map_not_registrated_txt {
+    font-size:14px!important;font-weight:bold;margin-left:15px;color:#fff;
+}
+
+/* 예식장 지도확인 */
+
+.map_confirm_title_wrapper {
+    height: 43px;
+    position: relative;
+}
+.map_confirm_title {
+    height: 100%;
+    display: inline-block;
+    line-height: 43px;
+}
+.map_confirm_title a { 
+    color: #333333;
+    font-size: 18px;
+}
+.map_confirm_close {
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+.map_confirm_close a {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+.map_confirm_close a:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 1px;
+    background-color: #888888;    
+}
+.map_confirm_close a:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 100%;
+    background-color: #888888;    
+}
+.map_name {
+    font-size:14px;
+    line-height:16px;
+    letter-spacing:-1px;
+    padding:10px; 
+    color:#333333;
+    padding-bottom:0;
+    font-weight:bold; 
+}
+.map_addr {
+    font-size:12px; 
+    line-height:14px; 
+    letter-spacing:-1px;
+    padding:10px;
+    color:#555555; 
+    padding-bottom:0; 
+}
+.map_road { 
+    font-size:12px;
+    line-height:14px;
+    letter-spacing:-1px; 
+    padding:10px; 
+    color:#555555; 
+}
+.map_confirm_btn {
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+    height: 40px;
+    background-color: #f4f5fa;
+    border: 1px solid #c5d8f9;
+    border-radius: 3px;
+    color: #333333; 
+    font-size: 12px;
+    padding: 13px 0;
+    text-align: center;
+}
+
+/* 계좌 */
+.bank_pop_btns {
+    display:block!important;
+}
